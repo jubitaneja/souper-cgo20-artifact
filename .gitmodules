@@ -1,0 +1,3 @@
+[submodule "precision/souper"]
+	path = precision/souper
+	url = https://github.com/jubitaneja/souper.git
