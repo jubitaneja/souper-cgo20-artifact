@@ -6,7 +6,7 @@ run set -x; \
         && apt-get autoremove -qq \
         && apt-get remove -y -qq clang llvm llvm-runtime \
 	&& apt-get install libgmp10 \
-	&& echo 'ca-certificates valgrind libc6-dev libgmp-dev cmake patch ninja-build make autoconf automake libtool golang-go python subversion re2c git clang' > /usr/src/build-deps \
+	&& echo 'ca-certificates valgrind libc6-dev libgmp-dev cmake patch ninja-build make autoconf automake libtool golang-go python subversion re2c git clang libredis-perl' > /usr/src/build-deps \
 	&& apt-get install -y $(cat /usr/src/build-deps) --no-install-recommends \
 	&& git clone https://github.com/antirez/redis /usr/src/redis
 #	&& git clone https://github.com/Z3Prover/z3.git /usr/src/z3
@@ -50,12 +50,12 @@ add precision/souper/runtime /usr/src/artifact-cgo/precision/souper/runtime
 add precision/souper/unittests /usr/src/artifact-cgo/precision/souper/unittests
 
 run export GOPATH=/usr/src/go \
-	&& mkdir -p /usr/src/artifact-cgo/souper-build \
-	&& cd /usr/src/artifact-cgo/souper-build \
+	&& mkdir -p /usr/src/artifact-cgo/precision/souper-build \
+	&& cd /usr/src/artifact-cgo/precision/souper-build \
 	&& CC=/usr/src/artifact-cgo/precision/souper/third_party/llvm/Release/bin/clang CXX=/usr/src/artifact-cgo/precision/souper/third_party/llvm/Release/bin/clang++ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DTEST_SYNTHESIS=ON ../souper \
     && ninja \
 #	&& ninja souperweb souperweb-backend \
-        && ninja check \
+    && ninja check
 #	&& cp souperweb souperweb-backend /usr/local/bin \
 #        && cd .. \
 #        && rm -rf /usr/src/artifact-cgo/souper-build \
@@ -65,3 +65,5 @@ run export GOPATH=/usr/src/go \
 #	&& mkdir /data \
 #	&& chown souper:souper /data \
 #	&& rm -rf /usr/local/include /usr/local/lib/*.a /usr/local/lib/*.la
+
+env SOUPER_SOLVER -z3-path=/usr/src/artifact-cgo/precision/souper/third_party/z3-install/bin/z3

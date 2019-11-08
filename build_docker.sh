@@ -7,6 +7,6 @@ tar cz Dockerfile precision/souper | docker build -t artifact-cgo -
 #docker export $container | docker import - souperweb_squashed
 
 #docker build -t souperweb_final - < Dockerfile.metadata
-#docker tag souperweb_final liuz/souperweb
+docker tag artifact-cgo jubitaneja/artifact-cgo
 
-# docker push regehr/souperweb
+# docker push jubitaneja/artifact-cgo
