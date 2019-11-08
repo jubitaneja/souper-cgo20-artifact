@@ -27,40 +27,41 @@ run export CC=clang CXX=clang++ \
 run export GOPATH=/usr/src/go \
 	&& go get github.com/gomodule/redigo/redis
 
-add souper/build_deps.sh /usr/src/artifact-cgo/souper/build_deps.sh
-add souper/clone_and_test.sh /usr/src/artifact-cgo/souper/clone_and_test.sh
-add souper/patches /usr/src/artifact-cgo/souper/patches
+add precision/souper/build_deps.sh /usr/src/artifact-cgo/precision/souper/build_deps.sh
+add precision/souper/clone_and_test.sh /usr/src/artifact-cgo/precision/souper/clone_and_test.sh
+add precision/souper/patches /usr/src/artifact-cgo/precision/souper/patches
 
 run export CC=clang CXX=clang++ \
-	&& cd /usr/src/artifact-cgo/souper \
+	&& cd /usr/src/artifact-cgo/precision/souper \
 #	&& ./build_deps.sh Debug \
 #       && rm -rf third_party/llvm/Debug-build \
 	&& ./build_deps.sh Release \
         && rm -rf third_party/llvm/Release-build \
 	&& rm -rf third_party/hiredis/install/lib/libhiredis.so*
 
-add souper/CMakeLists.txt /usr/src/artifact-cgo/souper/CMakeLists.txt
-add souper/docs /usr/src/artifact-cgo/souper/docs
-add souper/include /usr/src/artifact-cgo/souper/include
-add souper/lib /usr/src/artifact-cgo/souper/lib
-add souper/test /usr/src/artifact-cgo/souper/test
-add souper/tools /usr/src/artifact-cgo/souper/tools
-add souper/utils /usr/src/artifact-cgo/souper/utils
-add souper/runtime /usr/src/artifact-cgo/souper/runtime
-add souper/unittests /usr/src/artifact-cgo/souper/unittests
+add precision/souper/CMakeLists.txt /usr/src/artifact-cgo/precision/souper/CMakeLists.txt
+add precision/souper/docs /usr/src/artifact-cgo/precision/souper/docs
+add precision/souper/include /usr/src/artifact-cgo/precision/souper/include
+add precision/souper/lib /usr/src/artifact-cgo/precision/souper/lib
+add precision/souper/test /usr/src/artifact-cgo/precision/souper/test
+add precision/souper/tools /usr/src/artifact-cgo/precision/souper/tools
+add precision/souper/utils /usr/src/artifact-cgo/precision/souper/utils
+add precision/souper/runtime /usr/src/artifact-cgo/precision/souper/runtime
+add precision/souper/unittests /usr/src/artifact-cgo/precision/souper/unittests
 
 run export GOPATH=/usr/src/go \
 	&& mkdir -p /usr/src/artifact-cgo/souper-build \
 	&& cd /usr/src/artifact-cgo/souper-build \
-	&& CC=/usr/src/artifact-cgo/souper/third_party/llvm/Release/bin/clang CXX=/usr/src/artifact-cgo/souper/third_party/llvm/Release/bin/clang++ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DTEST_SYNTHESIS=ON ../souper \
-	&& ninja souperweb souperweb-backend \
+	&& CC=/usr/src/artifact-cgo/precision/souper/third_party/llvm/Release/bin/clang CXX=/usr/src/artifact-cgo/precision/souper/third_party/llvm/Release/bin/clang++ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DTEST_SYNTHESIS=ON ../souper \
+    && ninja \
+#	&& ninja souperweb souperweb-backend \
         && ninja check \
-	&& cp souperweb souperweb-backend /usr/local/bin \
-        && cd .. \
-        && rm -rf /usr/src/artifact-cgo/souper-build \
-	&& strip /usr/local/bin/* \
-	&& groupadd -r souper \
-	&& useradd -m -r -g souper souper \
-	&& mkdir /data \
-	&& chown souper:souper /data \
-	&& rm -rf /usr/local/include /usr/local/lib/*.a /usr/local/lib/*.la
+#	&& cp souperweb souperweb-backend /usr/local/bin \
+#        && cd .. \
+#        && rm -rf /usr/src/artifact-cgo/souper-build \
+#	&& strip /usr/local/bin/* \
+#	&& groupadd -r souper \
+#	&& useradd -m -r -g souper souper \
+#	&& mkdir /data \
+#	&& chown souper:souper /data \
+#	&& rm -rf /usr/local/include /usr/local/lib/*.a /usr/local/lib/*.la

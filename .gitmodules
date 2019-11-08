@@ -1,3 +1,9 @@
 [submodule "precision/souper"]
 	path = precision/souper
 	url = https://github.com/jubitaneja/souper.git
+[submodule "performance/souper"]
+	path = performance/souper
+	url = https://github.com/zhengyangl/souper.git
+[submodule "performance/llvm-with-calls-to-souper"]
+	path = performance/llvm-with-calls-to-souper
+	url = https://github.com/zhengyangl/llvm-with-calls-to-souper.git

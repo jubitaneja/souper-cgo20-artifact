@@ -2,7 +2,7 @@
 
 # docker system prune -a
 
-tar cz Dockerfile souper | docker build -t artifact-cgo -
+tar cz Dockerfile precision/souper | docker build -t artifact-cgo -
 #container=$(/usr/bin/docker run -d souperweb true)
 #docker export $container | docker import - souperweb_squashed
 
