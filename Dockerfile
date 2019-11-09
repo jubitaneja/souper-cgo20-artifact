@@ -17,13 +17,6 @@ run export CC=clang CXX=clang++ \
 	&& make -j10 \
 	&& make install
 
-#run export CC=clang CXX=clang++ \
-#        && cd /usr/src/z3 \
-#	&& git checkout tags/z3-4.8.6 \
-#	&& python scripts/mk_make.py \
-#	&& make -j \
-#	&& make install
-
 run export GOPATH=/usr/src/go \
 	&& go get github.com/gomodule/redigo/redis
 
@@ -67,3 +60,36 @@ run export GOPATH=/usr/src/go \
 #	&& rm -rf /usr/local/include /usr/local/lib/*.a /usr/local/lib/*.la
 
 env SOUPER_SOLVER -z3-path=/usr/src/artifact-cgo/precision/souper/third_party/z3-install/bin/z3
+
+# Performance setup
+add performance/souper/build_deps.sh /usr/src/artifact-cgo/performance/souper/build_deps.sh
+add performance/souper/clone_and_test.sh /usr/src/artifact-cgo/performance/souper/clone_and_test.sh
+add performance/souper/patches /usr/src/artifact-cgo/performance/souper/patches
+
+run export CC=clang CXX=clang++ \
+	&& cd /usr/src/artifact-cgo/performance/souper \
+	&& ./build_deps.sh Release \
+        && rm -rf third_party/llvm/Release-build
+
+add performance/souper/CMakeLists.txt /usr/src/artifact-cgo/performance/souper/CMakeLists.txt
+add performance/souper/docs /usr/src/artifact-cgo/performance/souper/docs
+add performance/souper/include /usr/src/artifact-cgo/performance/souper/include
+add performance/souper/lib /usr/src/artifact-cgo/performance/souper/lib
+add performance/souper/test /usr/src/artifact-cgo/performance/souper/test
+add performance/souper/tools /usr/src/artifact-cgo/performance/souper/tools
+add performance/souper/utils /usr/src/artifact-cgo/performance/souper/utils
+add performance/souper/runtime /usr/src/artifact-cgo/performance/souper/runtime
+add performance/souper/unittests /usr/src/artifact-cgo/performance/souper/unittests
+
+#run mkdir -p /usr/src/artifact-cgo/performance/souper/build \
+#	&& cd /usr/src/artifact-cgo/performance/souper/build \
+#	&& CC=clang CXX=clang++ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DTEST_SYNTHESIS=ON .. \
+#	&& ninja
+run export GOPATH=/usr/src/go \
+	&& mkdir -p /usr/src/artifact-cgo/performance/souper/build \
+	&& export CC=/usr/src/artifact-cgo/performance/souper/third_party/llvm/Release/bin/clang CXX=/usr/src/artifact-cgo/performance/souper/third_party/llvm/Release/bin/clang++ \
+	&& cd /usr/src/artifact-cgo/performance/souper/build \
+	&& cmake -DCMAKE_BUILD_TYPE=Release -G Ninja ../ \
+	&& ninja
+
+# LLVM-with0calls-to-souper-repo
