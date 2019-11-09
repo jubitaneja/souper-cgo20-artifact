@@ -92,4 +92,6 @@ run export GOPATH=/usr/src/go \
 	&& cmake -DCMAKE_BUILD_TYPE=Release -G Ninja ../ \
 	&& ninja
 
+env SOUPER_BUILD /usr/src/artifact-cgo/performance/souper/build
+
 # LLVM-with0calls-to-souper-repo
