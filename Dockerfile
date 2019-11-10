@@ -81,10 +81,6 @@ add performance/souper/utils /usr/src/artifact-cgo/performance/souper/utils
 add performance/souper/runtime /usr/src/artifact-cgo/performance/souper/runtime
 add performance/souper/unittests /usr/src/artifact-cgo/performance/souper/unittests
 
-#run mkdir -p /usr/src/artifact-cgo/performance/souper/build \
-#	&& cd /usr/src/artifact-cgo/performance/souper/build \
-#	&& CC=clang CXX=clang++ cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -DTEST_SYNTHESIS=ON .. \
-#	&& ninja
 run export GOPATH=/usr/src/go \
 	&& mkdir -p /usr/src/artifact-cgo/performance/souper/build \
 	&& export CC=/usr/src/artifact-cgo/performance/souper/third_party/llvm/Release/bin/clang CXX=/usr/src/artifact-cgo/performance/souper/third_party/llvm/Release/bin/clang++ \
@@ -95,3 +91,36 @@ run export GOPATH=/usr/src/go \
 env SOUPER_BUILD /usr/src/artifact-cgo/performance/souper/build
 
 # LLVM-with0calls-to-souper-repo
+
+add performance/llvm-with-calls-to-souper/benchmarks /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/benchmarks
+add performance/llvm-with-calls-to-souper/bindings /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/bindings
+add performance/llvm-with-calls-to-souper/cmake /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/cmake
+add performance/llvm-with-calls-to-souper/CMakeLists.txt /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/CMakeLists.txt
+add performance/llvm-with-calls-to-souper/configure /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/configure
+add performance/llvm-with-calls-to-souper/docs /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/docs
+add performance/llvm-with-calls-to-souper/examples /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/examples
+add performance/llvm-with-calls-to-souper/include /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/include
+add performance/llvm-with-calls-to-souper/lib /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/lib
+add performance/llvm-with-calls-to-souper/LICENSE.TXT /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/LICENSE.TXT
+add performance/llvm-with-calls-to-souper/LLVMBuild.txt /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/LLVMBuild.txt
+add performance/llvm-with-calls-to-souper/llvm.spec.in /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/llvm.spec.in
+add performance/llvm-with-calls-to-souper/projects /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/projects
+add performance/llvm-with-calls-to-souper/README.txt /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/README.txt
+add performance/llvm-with-calls-to-souper/RELEASE_TESTERS.TXT /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/RELEASE_TESTERS.TXT
+add performance/llvm-with-calls-to-souper/resources /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/resources
+add performance/llvm-with-calls-to-souper/runtimes /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/runtimes
+add performance/llvm-with-calls-to-souper/test /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/test
+add performance/llvm-with-calls-to-souper/tools /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/tools
+add performance/llvm-with-calls-to-souper/unittests /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/unittests
+add performance/llvm-with-calls-to-souper/utils /usr/src/artifact-cgo/performance/llvm-with-calls-to-souper/utils
+
+run export CC=clang CXX=clang++ \
+	&& mkdir -p /usr/src/artifact-cgo/performance/llvm-build \
+	&& cd /usr/src/artifact-cgo/performance/llvm-build \
+	#&& cmake ../llvm-with-calls-to-souper -G Ninja -DCMAKE_BUILD_TYPE=Release -DSOUPER_INCLUDE="$SOUPER_BUILD/../include" -DCLANG_ANALYZER_ENABLE_Z3_SOLVER=Off -DSOUPER_LIBRARIES="$SOUPER_BUILD/libsouperExtractor.a;$SOUPER_BUILD/libsouperInst.a;$SOUPER_BUILD/libkleeExpr.a;$SOUPER_BUILD/libsouperKVStore.a;$SOUPER_BUILD/libsouperInfer.a;$SOUPER_BUILD/libsouperClangTool.a;$SOUPER_BUILD/libsouperSMTLIB2.a;$SOUPER_BUILD/libsouperParser.a;$SOUPER_BUILD/libsouperTool.a;$SOUPER_BUILD/../third_party/alive2/build/libalive2.so;$SOUPER_BUILD/../third_party/hiredis/install/lib/libhiredis.a"
+	&& cmake ../llvm-with-calls-to-souper -G Ninja -DCMAKE_BUILD_TYPE=Release -DSOUPER_INCLUDE="$SOUPER_BUILD/../include" -DCLANG_ANALYZER_ENABLE_Z3_SOLVER=Off -DSOUPER_LIBRARIES="$SOUPER_BUILD/libsouperExtractor.a;$SOUPER_BUILD/libsouperInst.a;$SOUPER_BUILD/libkleeExpr.a;$SOUPER_BUILD/libsouperKVStore.a;$SOUPER_BUILD/libsouperInfer.a;$SOUPER_BUILD/libsouperClangTool.a;$SOUPER_BUILD/libsouperSMTLIB2.a;$SOUPER_BUILD/libsouperParser.a;$SOUPER_BUILD/libsouperTool.a;$SOUPER_BUILD/../third_party/alive2/build/libalive2.so;$SOUPER_BUILD/../third_party/hiredis/install/lib/libhiredis.a"
+	#&& ninja
+
+run cd /usr/src/artifact-cgo/performance/llvm-build \
+	&& ninja
+
