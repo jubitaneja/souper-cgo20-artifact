@@ -48,6 +48,8 @@ run export GOPATH=/usr/src/go \
 
 env SOUPER_SOLVER -z3-path=/usr/src/artifact-cgo/precision/souper/third_party/z3-install/bin/z3
 
+run cd
+
 # Performance setup
 add performance/souper /usr/src/artifact-cgo/performance/souper
 
@@ -83,6 +85,9 @@ add precision/test /usr/src/artifact-cgo/precision/test
 env SOUPER_PREC /usr/src/artifact-cgo/precision
 env SOUPER_SOLVER -z3-path=/usr/src/artifact-cgo/precision/souper/third_party/z3-install/bin/z3
 
-run cd /usr/src/artifact-cgo/precision/test \
-	&& ./run.sh
+# Test precision (Section 4.2 to 4.5)
+#run cd /usr/src/artifact-cgo/precision/test \
+#	&& ./run.sh
+
+add performance/test /usr/src/artifact-cgo/performance/test
 

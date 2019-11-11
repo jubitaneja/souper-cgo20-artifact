@@ -26,7 +26,7 @@ LLVM_RANGE_ARG="-print-range-at-return"
 
 
 echo "===========================================";
-echo "\t Evaluation: (Known bits) Section 4.2 \t";
+echo " Evaluation: (Known bits) Section 4.2 ";
 echo "===========================================";
 
 for i in `ls $KB_TEST_CASES/known*.opt`; do
@@ -34,11 +34,12 @@ for i in `ls $KB_TEST_CASES/known*.opt`; do
     cat "$i";
     $SOUPER_CHECK $SOUPER_SOLVER $SOUPER_KB_ARGS $i;
     $SOUPER2LLVM < $i | $LLVM_AS | $SOUPER $SOUPER_SOLVER $LLVM_KB_ARG;
-    echo "\n\n";
+    echo;
+    echo;
 done
 
 echo "===========================================";
-echo "\t Evaluation: (Power of two) Section 4.3 \t";
+echo " Evaluation: (Power of two) Section 4.3 ";
 echo "===========================================";
 
 for i in `ls $POWER_TEST_CASES/power*.opt`; do
@@ -46,11 +47,12 @@ for i in `ls $POWER_TEST_CASES/power*.opt`; do
     cat "$i";
     $SOUPER_CHECK $SOUPER_SOLVER $SOUPER_POWER_ARGS $i;
     $SOUPER2LLVM < $i | $LLVM_AS | $SOUPER $SOUPER_SOLVER $LLVM_POWER_ARG;
-    echo "\n\n";
+    echo;
+    echo;
 done
 
 echo "===========================================";
-echo "\t Evaluation: (Demanded bits) Section 4.4 \t";
+echo " Evaluation: (Demanded bits) Section 4.4 ";
 echo "===========================================";
 
 for i in `ls $DEMANDED_TEST_CASES/demanded*.opt`; do
@@ -58,11 +60,12 @@ for i in `ls $DEMANDED_TEST_CASES/demanded*.opt`; do
     cat "$i";
     $SOUPER_CHECK $SOUPER_SOLVER $SOUPER_DEMANDED_ARGS $i;
     $SOUPER2LLVM_DB < $i | $LLVM_AS | $SOUPER $SOUPER_SOLVER $LLVM_DEMANDED_ARG;
-    echo "\n\n";
+    echo;
+    echo;
 done
 
 echo "===========================================";
-echo "\t Evaluation: (Range) Section 4.5 \t";
+echo " Evaluation: (Range) Section 4.5 ";
 echo "===========================================";
 
 for i in `ls $RANGE_TEST_CASES/range*.opt`; do
@@ -70,7 +73,8 @@ for i in `ls $RANGE_TEST_CASES/range*.opt`; do
     cat "$i";
     $SOUPER_CHECK $SOUPER_SOLVER $SOUPER_RANGE_ARGS $i;
     $SOUPER2LLVM < $i | $LLVM_AS | $SOUPER $SOUPER_SOLVER $LLVM_RANGE_ARG;
-    echo "\n\n";
+    echo;
+    echo;
 done
 
 
