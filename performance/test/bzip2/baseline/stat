@@ -1,0 +1,1332 @@
+===-------------------------------------------------------------------------===
+                          ... Statistics Collected ...
+===-------------------------------------------------------------------------===
+
+ 2269 asm-printer                  - Number of machine instrs printed
+   98 assembler                    - Number of emitted assembler fragments - align
+ 1451 assembler                    - Number of emitted assembler fragments - data
+    9 assembler                    - Number of emitted assembler fragments - fill
+ 3056 assembler                    - Number of emitted assembler fragments - total
+  283 assembler                    - Number of emitted assembler fragments - relaxable
+ 4036 assembler                    - Number of fragment layouts
+48904 assembler                    - Number of emitted object file bytes
+    2 assembler                    - Number of assembler layout and relaxation steps
+  118 assembler                    - Number of relaxed instructions
+ 2683 assembler                    - Number of evaluated fixups
+12204 basicaa                      - Number of times a GEP is decomposed
+   11 bdce                         - Number of instructions removed (unused)
+   17 branch-folder                - Number of branches optimized
+   29 branch-folder                - Number of dead blocks removed
+   13 branch-folder                - Number of block tails merged
+    4 build-libcalls               - Number of arguments inferred as nocapture
+    2 build-libcalls               - Number of functions inferred as nounwind
+    1 build-libcalls               - Number of arguments inferred as readonly
+    1 cgscc-passmgr                - Maximum CGSCCPassMgr iterations on one SCC
+   36 codegenprepare               - Number of blocks eliminated
+   48 codegenprepare               - Number of uses of Cast expressions replaced with uses of sunken Casts
+   11 codegenprepare               - Number of uses of Cmp expressions replaced with uses of sunken Cmps
+  363 codegenprepare               - Number of debug value instructions moved
+   58 codegenprepare               - Number of uses of [s|z]ext instructions optimized
+   25 codegenprepare               - Number of [s|z]ext instructions combined with loads
+    7 codegenprepare               - Number of GEPs converted to casts
+   68 codegenprepare               - Number of memory instructions whose address computations were sunk
+    1 correlated-value-propagation - Number of ashr converted to lshr
+    1 correlated-value-propagation - Number of udivs whose width was decreased
+ 1056 dagcombine                   - Number of dag nodes combined
+    2 dagcombine                   - Number of load/op/store narrowed
+   14 dead-mi-elimination          - Number of dead instructions deleted
+    1 deadargelim                  - Number of unread args removed
+  320 early-cse                    - Number of instructions CSE'd
+    2 early-cse                    - Number of compare instructions CVP'd
+   20 early-cse                    - Number of load instructions CSE'd
+    4 early-cse                    - Number of trivial dead stores removed
+   15 early-cse                    - Number of instructions simplified or DCE'd
+   15 functionattrs                - Number of arguments marked nocapture
+    4 functionattrs                - Number of functions marked as norecurse
+    1 functionattrs                - Number of functions marked readnone
+    8 functionattrs                - Number of arguments marked readonly
+    8 globalopt                    - Number of functions converted to fastcc
+    8 globalopt                    - Number of internal functions
+    1 globalopt                    - Number of globals marked constant
+   14 globalopt                    - Number of globals marked unnamed_addr
+    5 globalsmodref-aa             - Number of functions that do not access memory
+   10 globalsmodref-aa             - Number of functions without address taken
+    2 globalsmodref-aa             - Number of global vars without address taken
+    5 globalsmodref-aa             - Number of functions that only read memory
+    5 gvn                          - Number of blocks merged
+    1 gvn                          - Number of equalities propagated
+  365 gvn                          - Number of instructions deleted
+    5 gvn                          - Number of loads deleted
+    5 gvn                          - Number of instructions PRE'd
+  296 gvn                          - Number of instructions simplified
+    7 gvn                          - Number of loads PRE'd
+    1 indvars                      - Number of IV comparisons eliminated
+   66 indvars                      - Number of IV sign/zero extends eliminated
+    1 indvars                      - Number of congruent IVs eliminated
+   15 indvars                      - Number of loop exit tests replaced
+    1 indvars                      - Number of exit values replaced
+   51 indvars                      - Number of indvars widened
+    6 inline                       - Number of functions deleted because all callers found
+    6 inline                       - Number of functions inlined
+   31 inline-cost                  - Number of call sites analyzed
+ 1548 instcombine                  - Number of insts combined
+    2 instcombine                  - Number of constant folds
+  365 instcombine                  - Number of dead inst eliminated
+   70 instcombine                  - Number of reassociations
+    5 instcombine                  - Number of library calls simplified
+   67 instcombine                  - Number of instructions sunk
+  275 instsimplify                 - Number of reassociations
+  149 instsimplify                 - Number of redundant instructions removed
+  362 isel                         - Number of blocks selected using DAG
+18820 isel                         - Number of times dag isel has to try another path
+    3 isel                         - Number of entry blocks encountered
+    6 jump-threading               - Number of terminators folded
+    4 jump-threading               - Number of jumps threaded
+ 1011 lcssa                        - Number of live out of a loop variables
+   46 licm                         - Number of instructions hoisted out of loop
+    2 licm                         - Number of load insts hoisted or sunk
+ 1640 licm                         - Number of instructions sunk out of loop
+ 4857 livedebugvalues              - Number of DBG_VALUE instructions inserted
+  595 livedebugvars                - Number of DBG_VALUEs inserted
+    7 local                        - Number of unreachable basic blocks removed
+    5 loop-delete                  - Number of loops deleted
+    1 loop-idiom                   - Number of memcpy's formed from loop load+stores
+    4 loop-idiom                   - Number of memset's formed from loop stores
+   49 loop-rotate                  - Number of loops rotated
+    7 loop-simplify                - Number of nested loops split out
+    1 loop-unroll                  - Number of loops completely unrolled
+    3 loop-unroll                  - Number of loops unrolled with run-time trip counts
+   11 loop-unroll                  - Number of loops unrolled (completely or otherwise)
+   95 loop-unswitch                - Total number of instructions analyzed
+   44 loop-vectorize               - Number of loops analyzed for vectorization
+    6 loop-vectorize               - Number of loops vectorized
+   11 machine-cp                   - Number of copy uses forwarded
+    3 machine-cp                   - Number of dead copies deleted
+   47 machine-cse                  - Number of common subexpression eliminated
+   25 machine-cse                  - Number of copies coalesced
+   28 machine-cse                  - Number of cross-MBB physreg referencing CS eliminated
+   28 machine-cse                  - Number of physreg referencing common subexpr eliminated
+  176 machine-scheduler            - Number of instr pairs fused
+    1 machine-sink                 - Number of copies sunk after RA
+    4 machine-sink                 - Number of critical edges split
+   65 machine-sink                 - Number of machine instructions sunk
+   23 machinelicm                  - Number of hoisted machine instructions CSEed
+   53 machinelicm                  - Number of machine instructions hoisted out of loops
+    5 machinelicm                  - Number of instructions hoisted in low reg pressure situation
+    1 machinelicm                  - Number of machine instructions hoisted out of loops post regalloc
+25761 mcexpr                       - Number of MCExpr evaluations
+    3 mem2reg                      - Number of alloca's promoted within one block
+  141 mem2reg                      - Number of PHI nodes inserted
+   82 mem2reg                      - Number of alloca's promoted with a single store
+   18 memdep                       - Number of block queries that were completely cached
+    1 memdep                       - Number of cached, but dirty, non-local ptr responses
+ 5424 memdep                       - Number of fully cached non-local ptr responses
+ 3017 memdep                       - Number of uncached non-local ptr responses
+ 2302 memory-builtins              - Number of arguments with unsolved size and offset
+ 1024 memory-builtins              - Number of load instructions with unsolved size and offset
+    2 peephole-opt                 - Number of compares eliminated
+   30 peephole-opt                 - Number of loads folded
+   11 peephole-opt                 - Number of extension results reused
+   28 phi-node-elimination         - Number of critical edges split
+  189 phi-node-elimination         - Number of phis lowered
+   24 pre-RA-sched                 - Number of loads clustered together
+ 7928 prologepilog                 - Number of bytes used for stack in all functions
+    3 prologepilog                 - Number of functions seen in PEI
+    1 prologepilog                 - Number of leaf functions with CSRs
+  133 reassociate                  - Number of insts reassociated
+  917 regalloc                     - Number of registers assigned
+  293 regalloc                     - Number of copies inserted for splitting
+   64 regalloc                     - Number of instructions deleted by DCE
+  139 regalloc                     - Number of interferences evicted
+   55 regalloc                     - Number of splits finished
+   28 regalloc                     - Number of folded stack accesses
+    1 regalloc                     - Number of live ranges fractured by DCE
+   35 regalloc                     - Number of split global live ranges
+   73 regalloc                     - Number of identity moves eliminated after rewriting
+   23 regalloc                     - Number of dead lane conflicts tested
+    1 regalloc                     - Number of split local live ranges
+  455 regalloc                     - Number of new live ranges queued
+   65 regalloc                     - Number of instructions re-materialized
+  179 regalloc                     - Number of reloads inserted
+    1 regalloc                     - Number of reloads removed
+    6 regalloc                     - Number of rematerialized defs for spilling
+    3 regalloc                     - Number of rematerialized defs for splitting
+   66 regalloc                     - Number of shrinkToUses called
+   11 regalloc                     - Number of splits that were simple
+    2 regalloc                     - Number of spilled snippets
+   66 regalloc                     - Number of spill slots allocated
+   74 regalloc                     - Number of spilled live ranges
+   79 regalloc                     - Number of spills inserted
+  141 regalloc                     - Number of registers unassigned
+  604 regalloc                     - Number of cross class joins performed
+ 1087 regalloc                     - Number of interval joins performed
+    3 scalar-evolution             - Number of loops with trip counts computed by force
+  157 scalar-evolution             - Number of loops with predictable loop counts
+  134 scalar-evolution             - Number of loops without predictable loop counts
+    1 sccp                         - Number of arguments constant propagated by IPSCCP
+    2 sccp                         - Number of basic blocks unreachable
+    3 shrink-wrap                  - Number of functions
+  616 simplifycfg                  - Number of blocks simplified
+   11 simplifycfg                  - Number of common instructions sunk down to the end block
+   11 simplifycfg                  - Number of speculative executed instructions
+   26 slotindexes                  - Number of local renumberings
+    3 sroa                         - Maximum number of partitions per alloca
+   78 sroa                         - Maximum number of uses of a partition
+ 2041 sroa                         - Number of alloca partition uses rewritten
+  162 sroa                         - Number of alloca partitions formed
+  192 sroa                         - Number of allocas analyzed for replacement
+ 2298 sroa                         - Number of instructions deleted
+    9 sroa                         - Number of new, smaller allocas introduced
+  162 sroa                         - Number of allocas promoted to SSA values
+   24 stack-coloring               - Number of lifetime markers found.
+   10 stack-slot-coloring          - Number of stack slots eliminated due to coloring
+    3 stackmaps                    - Number of functions skipped
+    3 stackmaps                    - Number of functions visited
+    5 tailduplication              - Number of dead blocks removed
+  122 tailduplication              - Number of instructions added due to tail duplication
+   46 tailduplication              - Number of tail duplicated blocks
+   18 tailduplication              - Number of tails duplicated
+    5 twoaddressinstruction        - Number of 3-address instructions sunk
+   12 twoaddressinstruction        - Number of instructions aggressively commuted
+   41 twoaddressinstruction        - Number of instructions commuted to coalesce
+  148 twoaddressinstruction        - Number of instructions promoted to 3-address
+    5 twoaddressinstruction        - Number of instructions re-scheduled down
+  509 twoaddressinstruction        - Number of two-address instructions
+   20 x86-cmov-conversion          - Number of CMOV-group candidates
+    4 x86-cmov-conversion          - Number of unsupported CMOV-groups
+
+===-------------------------------------------------------------------------===
+                          ... Statistics Collected ...
+===-------------------------------------------------------------------------===
+
+  696 asm-printer                  - Number of machine instrs printed
+   40 assembler                    - Number of emitted assembler fragments - align
+  412 assembler                    - Number of emitted assembler fragments - data
+    3 assembler                    - Number of emitted assembler fragments - fill
+  890 assembler                    - Number of emitted assembler fragments - total
+   93 assembler                    - Number of emitted assembler fragments - relaxable
+ 1260 assembler                    - Number of fragment layouts
+13792 assembler                    - Number of emitted object file bytes
+    2 assembler                    - Number of assembler layout and relaxation steps
+   26 assembler                    - Number of relaxed instructions
+  763 assembler                    - Number of evaluated fixups
+ 2132 basicaa                      - Number of times a GEP is decomposed
+    2 bdce                         - Number of instructions removed (unused)
+   12 branch-folder                - Number of branches optimized
+   19 branch-folder                - Number of dead blocks removed
+    3 branch-folder                - Number of times common instructions are hoisted
+    3 branch-folder                - Number of block tails merged
+    1 cgscc-passmgr                - Maximum CGSCCPassMgr iterations on one SCC
+   17 codegenprepare               - Number of blocks eliminated
+   11 codegenprepare               - Number of uses of Cast expressions replaced with uses of sunken Casts
+   17 codegenprepare               - Number of uses of Cmp expressions replaced with uses of sunken Cmps
+   37 codegenprepare               - Number of debug value instructions moved
+    3 codegenprepare               - Number of uses of [s|z]ext instructions optimized
+    4 codegenprepare               - Number of [s|z]ext instructions combined with loads
+    3 codegenprepare               - Number of GEPs converted to casts
+   28 codegenprepare               - Number of memory instructions whose address computations were sunk
+    3 correlated-value-propagation - Number of phis propagated
+  449 dagcombine                   - Number of dag nodes combined
+   56 early-cse                    - Number of instructions CSE'd
+   15 early-cse                    - Number of load instructions CSE'd
+    3 early-cse                    - Number of instructions simplified or DCE'd
+    8 functionattrs                - Number of arguments marked nocapture
+    2 functionattrs                - Number of functions marked as norecurse
+    3 functionattrs                - Number of arguments marked readonly
+    4 globalopt                    - Number of globals marked unnamed_addr
+    4 globalsmodref-aa             - Number of functions that do not access memory
+    4 globalsmodref-aa             - Number of functions that only read memory
+    2 gvn                          - Number of blocks merged
+    1 gvn                          - Number of equalities propagated
+   25 gvn                          - Number of instructions deleted
+    2 gvn                          - Number of loads deleted
+    2 gvn                          - Number of instructions PRE'd
+    9 gvn                          - Number of instructions simplified
+   22 indvars                      - Number of IV sign/zero extends eliminated
+    1 indvars                      - Number of congruent IVs eliminated
+   11 indvars                      - Number of loop exit tests replaced
+   16 indvars                      - Number of indvars widened
+  265 instcombine                  - Number of insts combined
+   68 instcombine                  - Number of dead inst eliminated
+   14 instcombine                  - Number of reassociations
+    4 instcombine                  - Number of instructions sunk
+    3 instsimplify                 - Number of reassociations
+   14 instsimplify                 - Number of redundant instructions removed
+  112 isel                         - Number of blocks selected using DAG
+ 9876 isel                         - Number of times dag isel has to try another path
+    3 isel                         - Number of entry blocks encountered
+    5 jump-threading               - Number of jumps threaded
+   53 lcssa                        - Number of live out of a loop variables
+   54 licm                         - Number of instructions hoisted out of loop
+    3 licm                         - Number of load insts hoisted or sunk
+  306 licm                         - Number of instructions sunk out of loop
+  547 livedebugvalues              - Number of DBG_VALUE instructions inserted
+  215 livedebugvars                - Number of DBG_VALUEs inserted
+    2 loop-delete                  - Number of loops deleted
+    2 loop-idiom                   - Number of memset's formed from loop stores
+   20 loop-rotate                  - Number of loops rotated
+    1 loop-unroll                  - Number of loops completely unrolled
+    6 loop-unroll                  - Number of loops unrolled with run-time trip counts
+    7 loop-unroll                  - Number of loops unrolled (completely or otherwise)
+    8 loop-unswitch                - Total number of instructions analyzed
+   13 loop-vectorize               - Number of loops analyzed for vectorization
+    3 loop-vectorize               - Number of loops vectorized
+    1 lrshrink                     - Number of insructions hoisted to shrink live range.
+    2 machine-cp                   - Number of copy uses forwarded
+    2 machine-cse                  - Number of common subexpression eliminated
+    3 machine-cse                  - Number of copies coalesced
+   67 machine-scheduler            - Number of instr pairs fused
+    6 machine-sink                 - Number of critical edges split
+   24 machine-sink                 - Number of machine instructions sunk
+    6 machinelicm                  - Number of hoisted machine instructions CSEed
+   17 machinelicm                  - Number of machine instructions hoisted out of loops
+ 7146 mcexpr                       - Number of MCExpr evaluations
+   34 mem2reg                      - Number of PHI nodes inserted
+   22 mem2reg                      - Number of alloca's promoted with a single store
+    1 memdep                       - Number of block queries that were completely cached
+   72 memdep                       - Number of fully cached non-local ptr responses
+   79 memdep                       - Number of uncached non-local ptr responses
+   10 memory-builtins              - Number of arguments with unsolved size and offset
+    5 peephole-opt                 - Number of extension results reused
+   17 phi-node-elimination         - Number of critical edges split
+   77 phi-node-elimination         - Number of phis lowered
+    9 pre-RA-sched                 - Number of loads clustered together
+ 5360 prologepilog                 - Number of bytes used for stack in all functions
+    3 prologepilog                 - Number of functions seen in PEI
+    2 prologepilog                 - Number of leaf functions with CSRs
+    4 reassociate                  - Number of insts reassociated
+  242 regalloc                     - Number of registers assigned
+   28 regalloc                     - Number of copies inserted for splitting
+    8 regalloc                     - Number of instructions deleted by DCE
+   39 regalloc                     - Number of interferences evicted
+   10 regalloc                     - Number of splits finished
+    4 regalloc                     - Number of folded stack accesses
+    6 regalloc                     - Number of split global live ranges
+   22 regalloc                     - Number of identity moves eliminated after rewriting
+   10 regalloc                     - Number of dead lane conflicts tested
+   80 regalloc                     - Number of new live ranges queued
+   10 regalloc                     - Number of instructions re-materialized
+   10 regalloc                     - Number of reloads inserted
+    4 regalloc                     - Number of rematerialized defs for spilling
+   11 regalloc                     - Number of shrinkToUses called
+    3 regalloc                     - Number of splits that were simple
+   11 regalloc                     - Number of spill slots allocated
+   13 regalloc                     - Number of spilled live ranges
+   11 regalloc                     - Number of spills inserted
+   39 regalloc                     - Number of registers unassigned
+  134 regalloc                     - Number of cross class joins performed
+  360 regalloc                     - Number of interval joins performed
+   57 scalar-evolution             - Number of loops with predictable loop counts
+   33 scalar-evolution             - Number of loops without predictable loop counts
+    3 shrink-wrap                  - Number of functions
+  177 simplifycfg                  - Number of blocks simplified
+    4 simplifycfg                  - Number of speculative executed instructions
+   11 slotindexes                  - Number of local renumberings
+    1 sroa                         - Maximum number of partitions per alloca
+   42 sroa                         - Maximum number of uses of a partition
+  315 sroa                         - Number of alloca partition uses rewritten
+   41 sroa                         - Number of alloca partitions formed
+   47 sroa                         - Number of allocas analyzed for replacement
+  363 sroa                         - Number of instructions deleted
+   41 sroa                         - Number of allocas promoted to SSA values
+    6 stack-coloring               - Number of lifetime markers found.
+    3 stackmaps                    - Number of functions skipped
+    3 stackmaps                    - Number of functions visited
+    2 tailduplication              - Number of dead blocks removed
+   13 tailduplication              - Number of instructions added due to tail duplication
+    7 tailduplication              - Number of tail duplicated blocks
+    7 tailduplication              - Number of tails duplicated
+    3 twoaddressinstruction        - Number of 3-address instructions sunk
+    3 twoaddressinstruction        - Number of instructions aggressively commuted
+    4 twoaddressinstruction        - Number of instructions commuted to coalesce
+   17 twoaddressinstruction        - Number of instructions promoted to 3-address
+    1 twoaddressinstruction        - Number of instructions re-scheduled down
+    2 twoaddressinstruction        - Number of instructions re-scheduled up
+  164 twoaddressinstruction        - Number of two-address instructions
+    7 x86-cmov-conversion          - Number of CMOV-group candidates
+    2 x86-cmov-conversion          - Number of CMOV-conversion profitable loops
+    2 x86-cmov-conversion          - Number of optimized CMOV-groups
+
+===-------------------------------------------------------------------------===
+                          ... Statistics Collected ...
+===-------------------------------------------------------------------------===
+
+   2 assembler     - Number of emitted assembler fragments - align
+  10 assembler     - Number of emitted assembler fragments - data
+  12 assembler     - Number of emitted assembler fragments - total
+  12 assembler     - Number of fragment layouts
+3160 assembler     - Number of emitted object file bytes
+   1 assembler     - Number of assembler layout and relaxation steps
+  13 assembler     - Number of evaluated fixups
+   1 cgscc-passmgr - Maximum CGSCCPassMgr iterations on one SCC
+   1 globalopt     - Number of globals marked unnamed_addr
+  46 mcexpr        - Number of MCExpr evaluations
+
+===-------------------------------------------------------------------------===
+                          ... Statistics Collected ...
+===-------------------------------------------------------------------------===
+
+   2 assembler     - Number of emitted assembler fragments - align
+  10 assembler     - Number of emitted assembler fragments - data
+  12 assembler     - Number of emitted assembler fragments - total
+  12 assembler     - Number of fragment layouts
+4160 assembler     - Number of emitted object file bytes
+   1 assembler     - Number of assembler layout and relaxation steps
+  13 assembler     - Number of evaluated fixups
+   1 cgscc-passmgr - Maximum CGSCCPassMgr iterations on one SCC
+   1 globalopt     - Number of globals marked unnamed_addr
+  46 mcexpr        - Number of MCExpr evaluations
+
+===-------------------------------------------------------------------------===
+                          ... Statistics Collected ...
+===-------------------------------------------------------------------------===
+
+  4015 asm-printer                  - Number of machine instrs printed
+   155 assembler                    - Number of emitted assembler fragments - align
+  1834 assembler                    - Number of emitted assembler fragments - data
+    21 assembler                    - Number of emitted assembler fragments - fill
+  3892 assembler                    - Number of emitted assembler fragments - total
+   360 assembler                    - Number of emitted assembler fragments - relaxable
+  5455 assembler                    - Number of fragment layouts
+ 68320 assembler                    - Number of emitted object file bytes
+     2 assembler                    - Number of assembler layout and relaxation steps
+    75 assembler                    - Number of relaxed instructions
+  3624 assembler                    - Number of evaluated fixups
+102356 basicaa                      - Number of times a GEP is decomposed
+     1 bdce                         - Number of instructions removed (unused)
+   101 branch-folder                - Number of branches optimized
+   122 branch-folder                - Number of dead blocks removed
+     4 branch-folder                - Number of times common instructions are hoisted
+     6 branch-folder                - Number of block tails merged
+     5 build-libcalls               - Number of arguments inferred as nocapture
+     3 build-libcalls               - Number of functions inferred as nounwind
+     1 build-libcalls               - Number of arguments inferred as readonly
+     1 cgscc-passmgr                - Maximum CGSCCPassMgr iterations on one SCC
+   102 codegenprepare               - Number of blocks eliminated
+    38 codegenprepare               - Number of uses of Cast expressions replaced with uses of sunken Casts
+    35 codegenprepare               - Number of uses of Cmp expressions replaced with uses of sunken Cmps
+   142 codegenprepare               - Number of debug value instructions moved
+    45 codegenprepare               - Number of uses of [s|z]ext instructions optimized
+     2 codegenprepare               - Number of [s|z]ext instructions combined with loads
+     7 codegenprepare               - Number of GEPs converted to casts
+   383 codegenprepare               - Number of memory instructions whose address computations were sunk
+     6 correlated-value-propagation - Number of phis propagated
+  2916 dagcombine                   - Number of dag nodes combined
+    27 dead-mi-elimination          - Number of dead instructions deleted
+     0 dse                          - Number of other instrs removed
+     1 dse                          - Number of stores deleted
+  1004 early-cse                    - Number of instructions CSE'd
+   231 early-cse                    - Number of load instructions CSE'd
+     1 early-cse                    - Number of trivial dead stores removed
+    15 early-cse                    - Number of instructions simplified or DCE'd
+     7 functionattrs                - Number of arguments marked nocapture
+     6 functionattrs                - Number of functions marked as norecurse
+     1 functionattrs                - Number of functions marked writeonly
+     2 globalopt                    - Number of globals deleted
+     7 globalopt                    - Number of functions converted to fastcc
+     7 globalopt                    - Number of internal functions
+    16 globalopt                    - Number of globals marked unnamed_addr
+     4 globalsmodref-aa             - Number of functions that do not access memory
+     9 globalsmodref-aa             - Number of functions without address taken
+     1 globalsmodref-aa             - Number of global vars without address taken
+     4 globalsmodref-aa             - Number of functions that only read memory
+    12 gvn                          - Number of blocks merged
+     3 gvn                          - Number of equalities propagated
+   357 gvn                          - Number of instructions deleted
+    29 gvn                          - Number of loads deleted
+     2 gvn                          - Number of instructions PRE'd
+   207 gvn                          - Number of instructions simplified
+    22 gvn                          - Number of loads PRE'd
+     1 indvars                      - Number of IV comparisons eliminated
+    39 indvars                      - Number of IV sign/zero extends eliminated
+    28 indvars                      - Number of loop exit tests replaced
+     1 indvars                      - Number of IV signed remainder operations converted to unsigned remainder
+    36 indvars                      - Number of indvars widened
+    87 inline                       - Number of caller-callers analyzed
+     5 inline                       - Number of functions deleted because all callers found
+    90 inline                       - Number of functions inlined
+   183 inline-cost                  - Number of call sites analyzed
+  1803 instcombine                  - Number of insts combined
+     6 instcombine                  - Number of constant folds
+   374 instcombine                  - Number of dead inst eliminated
+     1 instcombine                  - Number of dead stores eliminated
+    21 instcombine                  - Number of reassociations
+     2 instcombine                  - Number of library calls simplified
+     8 instcombine                  - Number of instructions sunk
+     1 instsimplify                 - Number of reassociations
+   235 instsimplify                 - Number of redundant instructions removed
+   483 isel                         - Number of blocks selected using DAG
+ 50146 isel                         - Number of times dag isel has to try another path
+     4 isel                         - Number of entry blocks encountered
+     1 jump-threading               - Number of terminators folded
+     8 jump-threading               - Number of jumps threaded
+  1346 lcssa                        - Number of live out of a loop variables
+   210 licm                         - Number of instructions hoisted out of loop
+     1 licm                         - Number of memory locations promoted to registers
+  1983 licm                         - Number of instructions sunk out of loop
+  2800 livedebugvalues              - Number of DBG_VALUE instructions inserted
+   902 livedebugvars                - Number of DBG_VALUEs inserted
+     1 local                        - Number of unreachable basic blocks removed
+     5 loop-delete                  - Number of loops deleted
+     5 loop-idiom                   - Number of memset's formed from loop stores
+    44 loop-rotate                  - Number of loops rotated
+     6 loop-unroll                  - Number of loops completely unrolled
+     3 loop-unroll                  - Number of loops unrolled with run-time trip counts
+    10 loop-unroll                  - Number of loops unrolled (completely or otherwise)
+    33 loop-unswitch                - Total number of instructions analyzed
+   103 loop-vectorize               - Number of loops analyzed for vectorization
+     2 loop-vectorize               - Number of loops vectorized
+     1 lrshrink                     - Number of insructions hoisted to shrink live range.
+     6 machine-cp                   - Number of copy uses forwarded
+   356 machine-cse                  - Number of common subexpression eliminated
+     2 machine-cse                  - Number of copies coalesced
+   272 machine-scheduler            - Number of instr pairs fused
+    10 machine-sink                 - Number of critical edges split
+    28 machine-sink                 - Number of machine instructions sunk
+    69 machinelicm                  - Number of hoisted machine instructions CSEed
+   117 machinelicm                  - Number of machine instructions hoisted out of loops
+ 32853 mcexpr                       - Number of MCExpr evaluations
+     5 mem2reg                      - Number of alloca's promoted within one block
+    78 mem2reg                      - Number of PHI nodes inserted
+    29 mem2reg                      - Number of alloca's promoted with a single store
+    14 memdep                       - Number of block queries that were completely cached
+ 95605 memdep                       - Number of fully cached non-local ptr responses
+  8126 memdep                       - Number of uncached non-local ptr responses
+  7310 memory-builtins              - Number of arguments with unsolved size and offset
+   138 memory-builtins              - Number of load instructions with unsolved size and offset
+    14 peephole-opt                 - Number of compares eliminated
+    10 peephole-opt                 - Number of loads folded
+     4 peephole-opt                 - Number of extension results reused
+     1 pgo-memop-opt                - Number of memop intrinsics annotated.
+   107 phi-node-elimination         - Number of critical edges split
+   528 phi-node-elimination         - Number of phis lowered
+     5 phi-node-elimination         - Number of reused lowered phis
+    10 pre-RA-sched                 - Number of loads clustered together
+     2 pre-RA-sched                 - Number of times scheduler backtracked
+   600 prologepilog                 - Number of bytes used for stack in all functions
+     4 prologepilog                 - Number of functions seen in PEI
+     1 prologepilog                 - Number of leaf functions with CSRs
+   196 reassociate                  - Number of insts reassociated
+  1061 regalloc                     - Number of registers assigned
+   173 regalloc                     - Number of copies inserted for splitting
+    66 regalloc                     - Number of instructions deleted by DCE
+    73 regalloc                     - Number of interferences evicted
+    25 regalloc                     - Number of splits finished
+    13 regalloc                     - Number of folded stack accesses
+     1 regalloc                     - Number of folded loads
+     1 regalloc                     - Number of live ranges fractured by DCE
+    20 regalloc                     - Number of split global live ranges
+   126 regalloc                     - Number of identity moves eliminated after rewriting
+     2 regalloc                     - Number of register classes inflated
+    14 regalloc                     - Number of dead lane conflicts tested
+     2 regalloc                     - Number of dead lane conflicts resolved
+   222 regalloc                     - Number of new live ranges queued
+   138 regalloc                     - Number of instructions re-materialized
+    85 regalloc                     - Number of reloads inserted
+     1 regalloc                     - Number of reloads removed
+     9 regalloc                     - Number of rematerialized defs for spilling
+     6 regalloc                     - Number of rematerialized defs for splitting
+   142 regalloc                     - Number of shrinkToUses called
+     8 regalloc                     - Number of splits that were simple
+     1 regalloc                     - Number of spilled snippets
+    27 regalloc                     - Number of spill slots allocated
+    42 regalloc                     - Number of spilled live ranges
+    31 regalloc                     - Number of spills inserted
+     1 regalloc                     - Number of spills removed
+    74 regalloc                     - Number of registers unassigned
+     2 regalloc                     - Number of instruction commuting performed
+   630 regalloc                     - Number of cross class joins performed
+  2837 regalloc                     - Number of interval joins performed
+   119 scalar-evolution             - Number of loops with predictable loop counts
+   293 scalar-evolution             - Number of loops without predictable loop counts
+     1 sccp                         - Number of basic blocks unreachable
+     2 sccp                         - Number of instructions removed
+     1 shrink-wrap                  - Number of shrink-wrapping candidates
+     4 shrink-wrap                  - Number of functions
+   741 simplifycfg                  - Number of blocks simplified
+    22 simplifycfg                  - Number of speculative executed instructions
+    18 slotindexes                  - Number of local renumberings
+     1 sroa                         - Maximum number of partitions per alloca
+   336 sroa                         - Maximum number of uses of a partition
+  2122 sroa                         - Number of alloca partition uses rewritten
+    62 sroa                         - Number of alloca partitions formed
+    74 sroa                         - Number of allocas analyzed for replacement
+  2204 sroa                         - Number of instructions deleted
+    62 sroa                         - Number of allocas promoted to SSA values
+    10 stack-coloring               - Number of lifetime markers found.
+     1 stack-coloring               - Number of stack slot merged.
+     6 stack-coloring               - Number of bytes saved due to merging slots.
+     6 stack-slot-coloring          - Number of stack slots eliminated due to coloring
+     4 stackmaps                    - Number of functions skipped
+     4 stackmaps                    - Number of functions visited
+     9 tailduplication              - Number of dead blocks removed
+    31 tailduplication              - Number of instructions added due to tail duplication
+     2 tailduplication              - Number of instructions removed due to tail duplication
+    14 tailduplication              - Number of tail duplicated blocks
+    15 tailduplication              - Number of tails duplicated
+     3 twoaddressinstruction        - Number of 3-address instructions sunk
+    20 twoaddressinstruction        - Number of instructions aggressively commuted
+    28 twoaddressinstruction        - Number of instructions commuted to coalesce
+    53 twoaddressinstruction        - Number of instructions promoted to 3-address
+    10 twoaddressinstruction        - Number of instructions re-scheduled down
+  1203 twoaddressinstruction        - Number of two-address instructions
+     7 x86-cmov-conversion          - Number of CMOV-group candidates
+     5 x86-cmov-conversion          - Number of unsupported CMOV-groups
+     2 x86-fixup-setcc              - Number of setcc + zext pairs substituted
+
+===-------------------------------------------------------------------------===
+                          ... Statistics Collected ...
+===-------------------------------------------------------------------------===
+
+    2 SLP                          - Number of vector instructions generated
+ 3346 asm-printer                  - Number of machine instrs printed
+   57 assembler                    - Number of emitted assembler fragments - align
+ 1349 assembler                    - Number of emitted assembler fragments - data
+   19 assembler                    - Number of emitted assembler fragments - fill
+ 3342 assembler                    - Number of emitted assembler fragments - total
+  486 assembler                    - Number of emitted assembler fragments - relaxable
+ 4417 assembler                    - Number of fragment layouts
+51776 assembler                    - Number of emitted object file bytes
+    2 assembler                    - Number of assembler layout and relaxation steps
+  218 assembler                    - Number of relaxed instructions
+ 3572 assembler                    - Number of evaluated fixups
+91260 basicaa                      - Number of times a GEP is decomposed
+   68 bdce                         - Number of instructions removed (unused)
+   92 branch-folder                - Number of branches optimized
+  100 branch-folder                - Number of dead blocks removed
+    2 branch-folder                - Number of times common instructions are hoisted
+   76 branch-folder                - Number of block tails merged
+    4 build-libcalls               - Number of arguments inferred as nocapture
+    2 build-libcalls               - Number of functions inferred as nounwind
+    1 build-libcalls               - Number of arguments inferred as readonly
+    1 cgscc-passmgr                - Maximum CGSCCPassMgr iterations on one SCC
+    4 codegenprepare               - Number of uses of and mask instructions optimized
+    4 codegenprepare               - Number of and mask instructions added to form ext loads
+  102 codegenprepare               - Number of blocks eliminated
+  142 codegenprepare               - Number of uses of Cast expressions replaced with uses of sunken Casts
+    5 codegenprepare               - Number of uses of Cmp expressions replaced with uses of sunken Cmps
+  411 codegenprepare               - Number of debug value instructions moved
+   13 codegenprepare               - Number of uses of [s|z]ext instructions optimized
+   31 codegenprepare               - Number of [s|z]ext instructions combined with loads
+   43 codegenprepare               - Number of GEPs converted to casts
+  574 codegenprepare               - Number of memory instructions whose address computations were sunk
+    3 correlated-value-propagation - Number of phis propagated
+ 2353 dagcombine                   - Number of dag nodes combined
+    3 dead-mi-elimination          - Number of dead instructions deleted
+    0 dse                          - Number of other instrs removed
+    4 dse                          - Number of stores deleted
+  934 early-cse                    - Number of instructions CSE'd
+  559 early-cse                    - Number of load instructions CSE'd
+    2 early-cse                    - Number of trivial dead stores removed
+   16 early-cse                    - Number of instructions simplified or DCE'd
+    1 functionattrs                - Number of arguments marked nocapture
+    1 functionattrs                - Number of functions marked as norecurse
+    1 globalopt                    - Number of functions converted to fastcc
+    1 globalopt                    - Number of internal functions
+    9 globalopt                    - Number of globals marked unnamed_addr
+    4 globalsmodref-aa             - Number of functions that do not access memory
+    1 globalsmodref-aa             - Number of functions without address taken
+    4 globalsmodref-aa             - Number of functions that only read memory
+    4 gvn                          - Number of blocks merged
+   10 gvn                          - Number of equalities propagated
+  320 gvn                          - Number of instructions deleted
+   45 gvn                          - Number of loads deleted
+   66 gvn                          - Number of instructions simplified
+  168 gvn                          - Number of loads PRE'd
+    5 indvars                      - Number of IV comparisons eliminated
+   31 indvars                      - Number of IV sign/zero extends eliminated
+   10 indvars                      - Number of loop exit tests replaced
+    1 indvars                      - Number of exit values replaced
+   26 indvars                      - Number of indvars widened
+    1 inline                       - Number of functions deleted because all callers found
+    1 inline                       - Number of functions inlined
+    1 inline-cost                  - Number of call sites analyzed
+ 1789 instcombine                  - Number of insts combined
+    8 instcombine                  - Number of constant folds
+  376 instcombine                  - Number of dead inst eliminated
+   79 instcombine                  - Number of reassociations
+    1 instcombine                  - Number of library calls simplified
+    8 instcombine                  - Number of instructions sunk
+   36 instsimplify                 - Number of reassociations
+  111 instsimplify                 - Number of redundant instructions removed
+  574 isel                         - Number of blocks selected using DAG
+36729 isel                         - Number of times dag isel has to try another path
+    1 isel                         - Number of entry blocks encountered
+    1 jump-threading               - Number of terminators folded
+    2 jump-threading               - Number of jumps threaded
+  593 lcssa                        - Number of live out of a loop variables
+  177 licm                         - Number of instructions hoisted out of loop
+    1 licm                         - Number of load insts hoisted or sunk
+  970 licm                         - Number of instructions sunk out of loop
+13565 livedebugvalues              - Number of DBG_VALUE instructions inserted
+  750 livedebugvars                - Number of DBG_VALUEs inserted
+    3 local                        - Number of unreachable basic blocks removed
+    2 loop-delete                  - Number of loops deleted
+    2 loop-idiom                   - Number of memset's formed from loop stores
+   67 loop-rotate                  - Number of loops rotated
+    3 loop-unroll                  - Number of loops completely unrolled
+    4 loop-unroll                  - Number of loops unrolled with run-time trip counts
+   14 loop-unroll                  - Number of loops unrolled (completely or otherwise)
+   55 loop-unswitch                - Total number of instructions analyzed
+   62 loop-vectorize               - Number of loops analyzed for vectorization
+    5 loop-vectorize               - Number of loops vectorized
+   17 machine-cp                   - Number of copy uses forwarded
+    2 machine-cp                   - Number of dead copies deleted
+   16 machine-cse                  - Number of common subexpression eliminated
+    3 machine-cse                  - Number of copies coalesced
+  210 machine-scheduler            - Number of instr pairs fused
+   63 machine-sink                 - Number of critical edges split
+  100 machine-sink                 - Number of machine instructions sunk
+    2 machinelicm                  - Number of hoisted machine instructions CSEed
+   17 machinelicm                  - Number of machine instructions hoisted out of loops
+31787 mcexpr                       - Number of MCExpr evaluations
+  408 mem2reg                      - Number of PHI nodes inserted
+   49 mem2reg                      - Number of alloca's promoted with a single store
+    1 memcpyopt                    - Number of memsets inferred
+    6 memdep                       - Number of block queries that were completely cached
+   12 memdep                       - Number of cached, but dirty, non-local ptr responses
+16886 memdep                       - Number of fully cached non-local ptr responses
+11063 memdep                       - Number of uncached non-local ptr responses
+ 3905 memory-builtins              - Number of arguments with unsolved size and offset
+    8 memory-builtins              - Number of load instructions with unsolved size and offset
+    1 peephole-opt                 - Number of loads folded
+    6 peephole-opt                 - Number of extension results reused
+   67 phi-node-elimination         - Number of critical edges split
+  654 phi-node-elimination         - Number of phis lowered
+   45 pre-RA-sched                 - Number of loads clustered together
+  248 prologepilog                 - Number of bytes used for stack in all functions
+    1 prologepilog                 - Number of functions seen in PEI
+   85 reassociate                  - Number of insts reassociated
+ 1008 regalloc                     - Number of registers assigned
+  907 regalloc                     - Number of copies inserted for splitting
+  160 regalloc                     - Number of instructions deleted by DCE
+   99 regalloc                     - Number of interferences evicted
+   45 regalloc                     - Number of splits finished
+   18 regalloc                     - Number of folded stack accesses
+   11 regalloc                     - Number of live ranges fractured by DCE
+   42 regalloc                     - Number of split global live ranges
+  170 regalloc                     - Number of identity moves eliminated after rewriting
+   27 regalloc                     - Number of dead lane conflicts tested
+    3 regalloc                     - Number of dead lane conflicts resolved
+  555 regalloc                     - Number of new live ranges queued
+   46 regalloc                     - Number of instructions re-materialized
+  301 regalloc                     - Number of reloads inserted
+   83 regalloc                     - Number of reloads removed
+    2 regalloc                     - Number of rematerialized defs for spilling
+    4 regalloc                     - Number of rematerialized defs for splitting
+   48 regalloc                     - Number of shrinkToUses called
+   27 regalloc                     - Number of splits that were simple
+    5 regalloc                     - Number of spilled snippets
+   29 regalloc                     - Number of spill slots allocated
+  105 regalloc                     - Number of spilled live ranges
+  152 regalloc                     - Number of spills inserted
+   81 regalloc                     - Number of spills removed
+  124 regalloc                     - Number of registers unassigned
+  431 regalloc                     - Number of cross class joins performed
+ 2375 regalloc                     - Number of interval joins performed
+  173 scalar-evolution             - Number of loops with predictable loop counts
+   69 scalar-evolution             - Number of loops without predictable loop counts
+    5 sccp                         - Number of instructions removed by IPSCCP
+    1 shrink-wrap                  - Number of functions
+  823 simplifycfg                  - Number of blocks simplified
+    4 simplifycfg                  - Number of speculative executed instructions
+  263 slotindexes                  - Number of local renumberings
+    1 sroa                         - Maximum number of partitions per alloca
+  929 sroa                         - Maximum number of uses of a partition
+ 1900 sroa                         - Number of alloca partition uses rewritten
+   89 sroa                         - Number of alloca partitions formed
+   91 sroa                         - Number of allocas analyzed for replacement
+ 2064 sroa                         - Number of instructions deleted
+   89 sroa                         - Number of allocas promoted to SSA values
+    2 stack-coloring               - Number of lifetime markers found.
+    4 stack-slot-coloring          - Number of stack slots eliminated due to coloring
+    1 stackmaps                    - Number of functions skipped
+    1 stackmaps                    - Number of functions visited
+    3 strip-dead-prototypes        - Number of dead prototypes removed
+    7 tailduplication              - Number of dead blocks removed
+    7 tailduplication              - Number of instructions added due to tail duplication
+    6 tailduplication              - Number of instructions removed due to tail duplication
+    6 tailduplication              - Number of tail duplicated blocks
+   12 tailduplication              - Number of tails duplicated
+    4 twoaddressinstruction        - Number of 3-address instructions sunk
+   72 twoaddressinstruction        - Number of instructions aggressively commuted
+   75 twoaddressinstruction        - Number of instructions commuted to coalesce
+   63 twoaddressinstruction        - Number of instructions promoted to 3-address
+   12 twoaddressinstruction        - Number of instructions re-scheduled down
+  684 twoaddressinstruction        - Number of two-address instructions
+    6 x86-cmov-conversion          - Number of CMOV-group candidates
+    3 x86-fixup-setcc              - Number of setcc + zext pairs substituted
+    1 x86-isel                     - Number of loads moved below TokenFactor
+
+===-------------------------------------------------------------------------===
+                          ... Statistics Collected ...
+===-------------------------------------------------------------------------===
+
+ 3153 asm-printer                  - Number of machine instrs printed
+  108 assembler                    - Number of emitted assembler fragments - align
+ 2451 assembler                    - Number of emitted assembler fragments - data
+ 5267 assembler                    - Number of emitted assembler fragments - total
+  585 assembler                    - Number of emitted assembler fragments - relaxable
+10043 assembler                    - Number of fragment layouts
+77712 assembler                    - Number of emitted object file bytes
+    2 assembler                    - Number of assembler layout and relaxation steps
+  236 assembler                    - Number of relaxed instructions
+ 5225 assembler                    - Number of evaluated fixups
+45746 basicaa                      - Number of times a GEP is decomposed
+   16 bdce                         - Number of instructions removed (unused)
+  132 branch-folder                - Number of branches optimized
+  139 branch-folder                - Number of dead blocks removed
+   68 branch-folder                - Number of block tails merged
+    1 build-libcalls               - Number of functions inferred as argmemonly
+    2 build-libcalls               - Number of function returns inferred as noalias
+   20 build-libcalls               - Number of arguments inferred as nocapture
+   10 build-libcalls               - Number of functions inferred as nounwind
+    2 build-libcalls               - Number of functions inferred as readonly
+    5 build-libcalls               - Number of arguments inferred as readonly
+    1 build-libcalls               - Number of arguments inferred as returned
+    2 cgscc-passmgr                - Maximum CGSCCPassMgr iterations on one SCC
+   24 codegenprepare               - Number of blocks eliminated
+  104 codegenprepare               - Number of uses of Cast expressions replaced with uses of sunken Casts
+   46 codegenprepare               - Number of uses of Cmp expressions replaced with uses of sunken Cmps
+  105 codegenprepare               - Number of debug value instructions moved
+   13 codegenprepare               - Number of uses of [s|z]ext instructions optimized
+   36 codegenprepare               - Number of [s|z]ext instructions combined with loads
+   25 codegenprepare               - Number of GEPs converted to casts
+  422 codegenprepare               - Number of memory instructions whose address computations were sunk
+    3 codegenprepare               - Number of return instructions duplicated
+    2 correlated-value-propagation - Number of comparisons propagated
+   12 correlated-value-propagation - Number of phis propagated
+ 2412 dagcombine                   - Number of dag nodes combined
+   11 dead-mi-elimination          - Number of dead instructions deleted
+    1 deadargelim                  - Number of unused return values removed
+    0 dse                          - Number of other instrs removed
+    6 dse                          - Number of stores deleted
+  724 early-cse                    - Number of instructions CSE'd
+    1 early-cse                    - Number of compare instructions CVP'd
+  284 early-cse                    - Number of load instructions CSE'd
+   15 early-cse                    - Number of trivial dead stores removed
+   64 early-cse                    - Number of instructions simplified or DCE'd
+    1 functionattrs                - Number of function returns marked noalias
+   14 functionattrs                - Number of arguments marked nocapture
+   15 functionattrs                - Number of functions marked as norecurse
+    3 functionattrs                - Number of functions marked readnone
+    3 functionattrs                - Number of arguments marked readnone
+    2 functionattrs                - Number of functions marked readonly
+   12 functionattrs                - Number of arguments marked readonly
+    1 functionattrs                - Number of functions marked writeonly
+    8 globalopt                    - Number of globals deleted
+   13 globalopt                    - Number of functions converted to fastcc
+   13 globalopt                    - Number of internal functions
+    1 globalopt                    - Number of globals marked constant
+   65 globalopt                    - Number of globals marked unnamed_addr
+   11 globalsmodref-aa             - Number of functions that do not access memory
+   16 globalsmodref-aa             - Number of functions without address taken
+    7 globalsmodref-aa             - Number of global vars without address taken
+   19 globalsmodref-aa             - Number of functions that only read memory
+    1 gvn                          - Number of blocks merged
+    9 gvn                          - Number of equalities propagated
+  231 gvn                          - Number of instructions deleted
+   31 gvn                          - Number of loads deleted
+   53 gvn                          - Number of instructions simplified
+   24 gvn                          - Number of loads PRE'd
+    1 indvars                      - Number of IV sign/zero extends eliminated
+    1 indvars                      - Number of loop exit tests replaced
+    1 indvars                      - Number of indvars widened
+   12 inline                       - Number of caller-callers analyzed
+    3 inline                       - Number of call sites deleted, not inlined
+   10 inline                       - Number of functions deleted because all callers found
+   43 inline                       - Number of functions inlined
+  102 inline-cost                  - Number of call sites analyzed
+ 1379 instcombine                  - Number of insts combined
+    8 instcombine                  - Number of constant folds
+  248 instcombine                  - Number of dead inst eliminated
+   20 instcombine                  - Number of reassociations
+    6 instcombine                  - Number of library calls simplified
+   39 instcombine                  - Number of instructions sunk
+   33 instsimplify                 - Number of redundant instructions removed
+  703 isel                         - Number of blocks selected using DAG
+28363 isel                         - Number of times dag isel has to try another path
+   31 isel                         - Number of entry blocks encountered
+   14 jump-threading               - Number of terminators folded
+   30 jump-threading               - Number of jumps threaded
+  252 lcssa                        - Number of live out of a loop variables
+  191 licm                         - Number of instructions hoisted out of loop
+    1 licm                         - Number of load insts hoisted or sunk
+ 1124 licm                         - Number of instructions sunk out of loop
+ 3024 livedebugvalues              - Number of DBG_VALUE instructions inserted
+  563 livedebugvars                - Number of DBG_VALUEs inserted
+    5 local                        - Number of unreachable basic blocks removed
+    1 loop-delete                  - Number of loops deleted
+    1 loop-idiom                   - Number of memset's formed from loop stores
+   18 loop-rotate                  - Number of loops rotated
+    5 loop-simplify                - Number of nested loops split out
+    2 loop-unroll                  - Number of loops unrolled with run-time trip counts
+    2 loop-unroll                  - Number of loops unrolled (completely or otherwise)
+   49 loop-unswitch                - Total number of instructions analyzed
+   26 loop-vectorize               - Number of loops analyzed for vectorization
+   71 machine-cp                   - Number of copy uses forwarded
+   81 machine-cse                  - Number of common subexpression eliminated
+    2 machine-cse                  - Number of copies coalesced
+    3 machine-cse                  - Number of cross-MBB physreg referencing CS eliminated
+    3 machine-cse                  - Number of physreg referencing common subexpr eliminated
+  242 machine-scheduler            - Number of instr pairs fused
+   62 machine-sink                 - Number of copies sunk after RA
+   22 machine-sink                 - Number of critical edges split
+   94 machine-sink                 - Number of machine instructions sunk
+   12 machinelicm                  - Number of hoisted machine instructions CSEed
+   24 machinelicm                  - Number of machine instructions hoisted out of loops
+45080 mcexpr                       - Number of MCExpr evaluations
+    1 mem2reg                      - Number of alloca's promoted within one block
+   91 mem2reg                      - Number of PHI nodes inserted
+  135 mem2reg                      - Number of alloca's promoted with a single store
+    6 memcpyopt                    - Number of memsets inferred
+   23 memdep                       - Number of block queries that were completely cached
+    3 memdep                       - Number of cached, but dirty, non-local ptr responses
+12170 memdep                       - Number of fully cached non-local ptr responses
+ 7173 memdep                       - Number of uncached non-local ptr responses
+  332 memory-builtins              - Number of arguments with unsolved size and offset
+  720 memory-builtins              - Number of load instructions with unsolved size and offset
+   42 peephole-opt                 - Number of loads folded
+    4 peephole-opt                 - Number of extension results reused
+  111 phi-node-elimination         - Number of critical edges split
+  171 phi-node-elimination         - Number of phis lowered
+   35 pre-RA-sched                 - Number of loads clustered together
+ 6024 prologepilog                 - Number of bytes used for stack in all functions
+   31 prologepilog                 - Number of functions seen in PEI
+   93 reassociate                  - Number of insts reassociated
+  859 regalloc                     - Number of registers assigned
+  100 regalloc                     - Number of copies inserted for splitting
+   60 regalloc                     - Number of instructions deleted by DCE
+  112 regalloc                     - Number of interferences evicted
+   28 regalloc                     - Number of splits finished
+    6 regalloc                     - Number of folded stack accesses
+   25 regalloc                     - Number of split global live ranges
+  235 regalloc                     - Number of identity moves eliminated after rewriting
+   20 regalloc                     - Number of dead lane conflicts tested
+   14 regalloc                     - Number of dead lane conflicts resolved
+  239 regalloc                     - Number of new live ranges queued
+   67 regalloc                     - Number of instructions re-materialized
+   53 regalloc                     - Number of reloads inserted
+   10 regalloc                     - Number of rematerialized defs for spilling
+    4 regalloc                     - Number of rematerialized defs for splitting
+   68 regalloc                     - Number of shrinkToUses called
+   14 regalloc                     - Number of splits that were simple
+    2 regalloc                     - Number of spilled snippets
+   19 regalloc                     - Number of spill slots allocated
+   21 regalloc                     - Number of spilled live ranges
+   21 regalloc                     - Number of spills inserted
+  112 regalloc                     - Number of registers unassigned
+    1 regalloc                     - Number of instruction commuting performed
+  403 regalloc                     - Number of cross class joins performed
+ 1004 regalloc                     - Number of interval joins performed
+   12 scalar-evolution             - Number of loops with predictable loop counts
+   91 scalar-evolution             - Number of loops without predictable loop counts
+   23 sccp                         - Number of instructions removed by IPSCCP
+   13 sccp                         - Number of basic blocks unreachable
+   26 sccp                         - Number of instructions removed
+    1 shrink-wrap                  - Number of shrink-wrapping candidates
+   31 shrink-wrap                  - Number of functions
+  668 simplifycfg                  - Number of blocks simplified
+    6 simplifycfg                  - Number of common instructions sunk down to the end block
+   16 simplifycfg                  - Number of speculative executed instructions
+   14 slotindexes                  - Number of local renumberings
+    1 sroa                         - Maximum number of partitions per alloca
+  225 sroa                         - Maximum number of uses of a partition
+ 2067 sroa                         - Number of alloca partition uses rewritten
+  211 sroa                         - Number of alloca partitions formed
+  228 sroa                         - Number of allocas analyzed for replacement
+ 2187 sroa                         - Number of instructions deleted
+  211 sroa                         - Number of allocas promoted to SSA values
+   16 stack-coloring               - Number of lifetime markers found.
+    7 stack-slot-coloring          - Number of stack slots eliminated due to coloring
+   31 stackmaps                    - Number of functions skipped
+   31 stackmaps                    - Number of functions visited
+    6 tailduplication              - Number of dead blocks removed
+   36 tailduplication              - Number of instructions added due to tail duplication
+    1 tailduplication              - Number of instructions removed due to tail duplication
+   29 tailduplication              - Number of tail duplicated blocks
+   19 tailduplication              - Number of tails duplicated
+    1 twoaddressinstruction        - Number of 3-address instructions sunk
+   10 twoaddressinstruction        - Number of instructions aggressively commuted
+   10 twoaddressinstruction        - Number of instructions commuted to coalesce
+   66 twoaddressinstruction        - Number of instructions promoted to 3-address
+    1 twoaddressinstruction        - Number of instructions re-scheduled down
+  335 twoaddressinstruction        - Number of two-address instructions
+   46 x86-cmov-conversion          - Number of CMOV-group candidates
+   12 x86-cmov-conversion          - Number of CMOV-conversion profitable loops
+   12 x86-cmov-conversion          - Number of optimized CMOV-groups
+   14 x86-fixup-setcc              - Number of setcc + zext pairs substituted
+   51 x86-isel                     - Number of loads moved below TokenFactor
+    6 x86-isel                     - Number of tail calls
+
+===-------------------------------------------------------------------------===
+                          ... Statistics Collected ...
+===-------------------------------------------------------------------------===
+
+     1 adce                         - Number of instructions removed
+  3093 asm-printer                  - Number of machine instrs printed
+    89 assembler                    - Number of emitted assembler fragments - align
+  2210 assembler                    - Number of emitted assembler fragments - data
+    21 assembler                    - Number of emitted assembler fragments - fill
+  4628 assembler                    - Number of emitted assembler fragments - total
+   516 assembler                    - Number of emitted assembler fragments - relaxable
+  6504 assembler                    - Number of fragment layouts
+104320 assembler                    - Number of emitted object file bytes
+     2 assembler                    - Number of assembler layout and relaxation steps
+   283 assembler                    - Number of relaxed instructions
+  4866 assembler                    - Number of evaluated fixups
+  3278 basicaa                      - Number of times a GEP is decomposed
+     6 bdce                         - Number of instructions removed (unused)
+   106 branch-folder                - Number of branches optimized
+   111 branch-folder                - Number of dead blocks removed
+     1 branch-folder                - Number of times common instructions are hoisted
+    88 branch-folder                - Number of block tails merged
+     1 build-libcalls               - Number of functions inferred as argmemonly
+     2 build-libcalls               - Number of function returns inferred as noalias
+    33 build-libcalls               - Number of arguments inferred as nocapture
+    11 build-libcalls               - Number of functions inferred as nounwind
+     2 build-libcalls               - Number of functions inferred as readonly
+    12 build-libcalls               - Number of arguments inferred as readonly
+     3 build-libcalls               - Number of arguments inferred as returned
+     1 cgscc-passmgr                - Maximum CGSCCPassMgr iterations on one SCC
+    31 codegenprepare               - Number of blocks eliminated
+    64 codegenprepare               - Number of uses of Cast expressions replaced with uses of sunken Casts
+     8 codegenprepare               - Number of uses of Cmp expressions replaced with uses of sunken Cmps
+    87 codegenprepare               - Number of debug value instructions moved
+     4 codegenprepare               - Number of uses of [s|z]ext instructions optimized
+     3 codegenprepare               - Number of [s|z]ext instructions combined with loads
+    21 codegenprepare               - Number of GEPs converted to casts
+    37 codegenprepare               - Number of memory instructions whose address computations were sunk
+     2 codegenprepare               - Number of return instructions duplicated
+     1 consthoist                   - Number of constants hoisted
+     9 correlated-value-propagation - Number of phis propagated
+  1727 dagcombine                   - Number of dag nodes combined
+   147 dead-mi-elimination          - Number of dead instructions deleted
+     9 deadargelim                  - Number of unread args removed
+     1 deadargelim                  - Number of unused return values removed
+     8 div-rem-pairs                - Number of div/rem pairs
+   136 early-cse                    - Number of instructions CSE'd
+     3 early-cse                    - Number of call instructions CSE'd
+    92 early-cse                    - Number of load instructions CSE'd
+    14 early-cse                    - Number of instructions simplified or DCE'd
+     3 functionattrs                - Number of function returns marked noalias
+    18 functionattrs                - Number of arguments marked nocapture
+     6 functionattrs                - Number of functions marked as norecurse
+     1 functionattrs                - Number of functions marked readnone
+     3 functionattrs                - Number of functions marked readonly
+    11 functionattrs                - Number of arguments marked readonly
+     1 functionattrs                - Number of functions marked writeonly
+     3 globalopt                    - Number of globals deleted
+    41 globalopt                    - Number of functions converted to fastcc
+    41 globalopt                    - Number of internal functions
+   113 globalopt                    - Number of globals marked unnamed_addr
+     9 globalsmodref-aa             - Number of functions that do not access memory
+    57 globalsmodref-aa             - Number of functions without address taken
+     2 globalsmodref-aa             - Number of global vars without address taken
+    24 globalsmodref-aa             - Number of functions that only read memory
+     5 gvn                          - Number of blocks merged
+     2 gvn                          - Number of equalities propagated
+    77 gvn                          - Number of instructions deleted
+    23 gvn                          - Number of loads deleted
+     1 gvn                          - Number of instructions PRE'd
+    29 gvn                          - Number of instructions simplified
+    13 gvn                          - Number of loads PRE'd
+     2 indvars                      - Number of IV comparisons eliminated
+    14 indvars                      - Number of IV sign/zero extends eliminated
+     5 indvars                      - Number of loop exit tests replaced
+    13 indvars                      - Number of indvars widened
+    86 inline                       - Number of caller-callers analyzed
+     3 inline                       - Number of call sites deleted, not inlined
+    27 inline                       - Number of functions deleted because all callers found
+   104 inline                       - Number of functions inlined
+   367 inline-cost                  - Number of call sites analyzed
+   753 instcombine                  - Number of insts combined
+    14 instcombine                  - Number of constant folds
+   300 instcombine                  - Number of dead inst eliminated
+    19 instcombine                  - Number of reassociations
+    29 instcombine                  - Number of library calls simplified
+     7 instcombine                  - Number of instructions sunk
+    26 instsimplify                 - Number of redundant instructions removed
+   640 isel                         - Number of blocks selected using DAG
+ 18890 isel                         - Number of times dag isel has to try another path
+    19 isel                         - Number of entry blocks encountered
+     2 jump-threading               - Number of terminators folded
+    32 jump-threading               - Number of jumps threaded
+   132 lcssa                        - Number of live out of a loop variables
+    17 licm                         - Number of instructions hoisted out of loop
+     4 licm                         - Number of call insts hoisted or sunk
+     2 licm                         - Number of load insts hoisted or sunk
+     1 licm                         - Number of memory locations promoted to registers
+   262 licm                         - Number of instructions sunk out of loop
+  1336 livedebugvalues              - Number of DBG_VALUE instructions inserted
+   632 livedebugvars                - Number of DBG_VALUEs inserted
+    43 local                        - Number of unreachable basic blocks removed
+    26 loop-rotate                  - Number of loops rotated
+     5 loop-unroll                  - Number of loops completely unrolled
+     4 loop-unroll                  - Number of loops unrolled with run-time trip counts
+     9 loop-unroll                  - Number of loops unrolled (completely or otherwise)
+    25 loop-unswitch                - Total number of instructions analyzed
+    24 loop-vectorize               - Number of loops analyzed for vectorization
+     4 loop-vectorize               - Number of loops vectorized
+    47 machine-cp                   - Number of copy uses forwarded
+    14 machine-cse                  - Number of common subexpression eliminated
+     2 machine-cse                  - Number of copies coalesced
+   247 machine-scheduler            - Number of instr pairs fused
+    11 machine-sink                 - Number of copies sunk after RA
+    20 machine-sink                 - Number of critical edges split
+    96 machine-sink                 - Number of machine instructions sunk
+    32 machinelicm                  - Number of hoisted machine instructions CSEed
+    95 machinelicm                  - Number of machine instructions hoisted out of loops
+ 39152 mcexpr                       - Number of MCExpr evaluations
+    67 mem2reg                      - Number of PHI nodes inserted
+    87 mem2reg                      - Number of alloca's promoted with a single store
+     1 memcpyopt                    - Number of memsets inferred
+    76 memdep                       - Number of block queries that were completely cached
+    24 memdep                       - Number of fully cached non-local responses
+  6035 memdep                       - Number of fully cached non-local ptr responses
+    18 memdep                       - Number of uncached non-local responses
+  2757 memdep                       - Number of uncached non-local ptr responses
+    10 memory-builtins              - Number of load instructions with unsolved size and offset
+    34 peephole-opt                 - Number of loads folded
+     4 peephole-opt                 - Number of extension results reused
+    28 phi-node-elimination         - Number of critical edges split
+   127 phi-node-elimination         - Number of phis lowered
+    17 pre-RA-sched                 - Number of loads clustered together
+ 26264 prologepilog                 - Number of bytes used for stack in all functions
+    19 prologepilog                 - Number of functions seen in PEI
+     1 prologepilog                 - Number of leaf functions with CSRs
+    25 reassociate                  - Number of insts reassociated
+   817 regalloc                     - Number of registers assigned
+    13 regalloc                     - Number of copies inserted for splitting
+   414 regalloc                     - Number of instructions deleted by DCE
+    53 regalloc                     - Number of interferences evicted
+     7 regalloc                     - Number of splits finished
+     3 regalloc                     - Number of split global live ranges
+   375 regalloc                     - Number of identity moves eliminated after rewriting
+     3 regalloc                     - Number of dead lane conflicts tested
+     1 regalloc                     - Number of dead lane conflicts resolved
+     4 regalloc                     - Number of split local live ranges
+    97 regalloc                     - Number of new live ranges queued
+   460 regalloc                     - Number of instructions re-materialized
+     3 regalloc                     - Number of reloads inserted
+    10 regalloc                     - Number of rematerialized defs for spilling
+   460 regalloc                     - Number of shrinkToUses called
+     7 regalloc                     - Number of splits that were simple
+     3 regalloc                     - Number of spill slots allocated
+    12 regalloc                     - Number of spilled live ranges
+     3 regalloc                     - Number of spills inserted
+    55 regalloc                     - Number of registers unassigned
+   315 regalloc                     - Number of cross class joins performed
+   754 regalloc                     - Number of interval joins performed
+    34 scalar-evolution             - Number of loops with predictable loop counts
+    73 scalar-evolution             - Number of loops without predictable loop counts
+     8 sccp                         - Number of arguments constant propagated by IPSCCP
+    13 sccp                         - Number of instructions removed by IPSCCP
+    11 sccp                         - Number of basic blocks unreachable
+    29 sccp                         - Number of instructions removed
+    19 shrink-wrap                  - Number of functions
+   515 simplifycfg                  - Number of blocks simplified
+     2 simplifycfg                  - Number of common instructions sunk down to the end block
+     2 simplifycfg                  - Number of speculative executed instructions
+    21 slotindexes                  - Number of local renumberings
+     8 sroa                         - Maximum number of partitions per alloca
+    72 sroa                         - Maximum number of uses of a partition
+   861 sroa                         - Number of alloca partition uses rewritten
+   156 sroa                         - Number of alloca partitions formed
+   243 sroa                         - Number of allocas analyzed for replacement
+   992 sroa                         - Number of instructions deleted
+     8 sroa                         - Number of new, smaller allocas introduced
+   156 sroa                         - Number of allocas promoted to SSA values
+    89 stack-coloring               - Number of lifetime markers found.
+     7 stack-coloring               - Number of stack slot merged.
+   612 stack-coloring               - Number of bytes saved due to merging slots.
+    19 stackmaps                    - Number of functions skipped
+    19 stackmaps                    - Number of functions visited
+     5 tailduplication              - Number of dead blocks removed
+    35 tailduplication              - Number of instructions added due to tail duplication
+     1 tailduplication              - Number of instructions removed due to tail duplication
+    21 tailduplication              - Number of tail duplicated blocks
+    21 tailduplication              - Number of tails duplicated
+    10 twoaddressinstruction        - Number of instructions aggressively commuted
+    11 twoaddressinstruction        - Number of instructions commuted to coalesce
+    24 twoaddressinstruction        - Number of instructions promoted to 3-address
+     1 twoaddressinstruction        - Number of instructions re-scheduled down
+   230 twoaddressinstruction        - Number of two-address instructions
+     4 x86-cmov-conversion          - Number of CMOV-group candidates
+     1 x86-cmov-conversion          - Number of unsupported CMOV-groups
+     1 x86-fixup-setcc              - Number of setcc + zext pairs substituted
+     3 x86-isel                     - Number of tail calls
+
+clang-8: warning: argument unused during compilation: '-mllvm -stats' [-Wunused-command-line-argument]
+===-------------------------------------------------------------------------===
+                          ... Statistics Collected ...
+===-------------------------------------------------------------------------===
+
+  999 asm-printer                  - Number of machine instrs printed
+   64 assembler                    - Number of emitted assembler fragments - align
+  784 assembler                    - Number of emitted assembler fragments - data
+ 1623 assembler                    - Number of emitted assembler fragments - total
+  137 assembler                    - Number of emitted assembler fragments - relaxable
+ 1973 assembler                    - Number of fragment layouts
+35096 assembler                    - Number of emitted object file bytes
+    2 assembler                    - Number of assembler layout and relaxation steps
+   43 assembler                    - Number of relaxed instructions
+ 1485 assembler                    - Number of evaluated fixups
+ 2914 basicaa                      - Number of times a GEP is decomposed
+    1 bdce                         - Number of instructions removed (unused)
+   33 branch-folder                - Number of branches optimized
+   26 branch-folder                - Number of dead blocks removed
+   24 branch-folder                - Number of block tails merged
+    1 build-libcalls               - Number of functions inferred as argmemonly
+    1 build-libcalls               - Number of function returns inferred as noalias
+   18 build-libcalls               - Number of arguments inferred as nocapture
+    8 build-libcalls               - Number of functions inferred as nounwind
+    8 build-libcalls               - Number of arguments inferred as readonly
+    3 build-libcalls               - Number of arguments inferred as returned
+    1 cgscc-passmgr                - Maximum CGSCCPassMgr iterations on one SCC
+    2 codegenprepare               - Number of blocks eliminated
+   71 codegenprepare               - Number of uses of Cast expressions replaced with uses of sunken Casts
+    1 codegenprepare               - Number of uses of Cmp expressions replaced with uses of sunken Cmps
+   66 codegenprepare               - Number of debug value instructions moved
+    4 codegenprepare               - Number of GEPs converted to casts
+   52 codegenprepare               - Number of memory instructions whose address computations were sunk
+    2 correlated-value-propagation - Number of phis propagated
+  457 dagcombine                   - Number of dag nodes combined
+   29 dead-mi-elimination          - Number of dead instructions deleted
+    3 deadargelim                  - Number of unread args removed
+   91 early-cse                    - Number of instructions CSE'd
+    1 early-cse                    - Number of call instructions CSE'd
+   14 early-cse                    - Number of load instructions CSE'd
+    5 early-cse                    - Number of instructions simplified or DCE'd
+    2 functionattrs                - Number of function returns marked noalias
+    6 functionattrs                - Number of arguments marked nocapture
+    1 functionattrs                - Number of functions marked readonly
+    1 functionattrs                - Number of arguments marked readonly
+    3 globalopt                    - Number of globals deleted
+   12 globalopt                    - Number of functions converted to fastcc
+   12 globalopt                    - Number of internal functions
+   38 globalopt                    - Number of globals marked unnamed_addr
+    4 globalsmodref-aa             - Number of functions that do not access memory
+   17 globalsmodref-aa             - Number of functions without address taken
+    9 globalsmodref-aa             - Number of functions that only read memory
+    1 gvn                          - Number of blocks merged
+   71 gvn                          - Number of instructions deleted
+   36 gvn                          - Number of loads deleted
+    8 gvn                          - Number of instructions simplified
+    7 gvn                          - Number of loads PRE'd
+    2 indvars                      - Number of IV comparisons eliminated
+    1 indvars                      - Number of IV sign/zero extends eliminated
+    2 indvars                      - Number of loop exit tests replaced
+    1 indvars                      - Number of exit values replaced
+    1 indvars                      - Number of indvars widened
+   17 inline                       - Number of caller-callers analyzed
+    7 inline                       - Number of functions deleted because all callers found
+   26 inline                       - Number of functions inlined
+  107 inline-cost                  - Number of call sites analyzed
+  282 instcombine                  - Number of insts combined
+   47 instcombine                  - Number of dead inst eliminated
+    8 instcombine                  - Number of reassociations
+    3 instcombine                  - Number of library calls simplified
+    4 instcombine                  - Number of instructions sunk
+    1 instsimplify                 - Number of reassociations
+   58 instsimplify                 - Number of redundant instructions removed
+  215 isel                         - Number of blocks selected using DAG
+ 7926 isel                         - Number of times dag isel has to try another path
+    6 isel                         - Number of entry blocks encountered
+    4 jump-threading               - Number of jumps threaded
+  192 lcssa                        - Number of live out of a loop variables
+   37 licm                         - Number of instructions hoisted out of loop
+    3 licm                         - Number of memory locations promoted to registers
+   77 licm                         - Number of instructions sunk out of loop
+ 1468 livedebugvalues              - Number of DBG_VALUE instructions inserted
+  175 livedebugvars                - Number of DBG_VALUEs inserted
+    4 local                        - Number of unreachable basic blocks removed
+    1 loop-delete                  - Number of loops deleted
+    1 loop-idiom                   - Number of memset's formed from loop stores
+    4 loop-rotate                  - Number of loops rotated
+    3 loop-simplify                - Number of nested loops split out
+    1 loop-unroll                  - Number of loops unrolled with run-time trip counts
+    1 loop-unroll                  - Number of loops unrolled (completely or otherwise)
+   23 loop-unswitch                - Total number of instructions analyzed
+   20 loop-vectorize               - Number of loops analyzed for vectorization
+   14 machine-cp                   - Number of copy uses forwarded
+    1 machine-cp                   - Number of dead copies deleted
+    2 machine-cse                  - Number of common subexpression eliminated
+    1 machine-cse                  - Number of copies coalesced
+   85 machine-scheduler            - Number of instr pairs fused
+    6 machine-sink                 - Number of copies sunk after RA
+    1 machine-sink                 - Number of critical edges split
+   31 machine-sink                 - Number of machine instructions sunk
+    9 machinelicm                  - Number of hoisted machine instructions CSEed
+   37 machinelicm                  - Number of machine instructions hoisted out of loops
+13257 mcexpr                       - Number of MCExpr evaluations
+   28 mem2reg                      - Number of PHI nodes inserted
+   22 mem2reg                      - Number of alloca's promoted with a single store
+   35 memdep                       - Number of block queries that were completely cached
+    1 memdep                       - Number of fully cached non-local responses
+ 1330 memdep                       - Number of fully cached non-local ptr responses
+    1 memdep                       - Number of uncached non-local responses
+ 1159 memdep                       - Number of uncached non-local ptr responses
+    1 peephole-opt                 - Number of compares eliminated
+    6 peephole-opt                 - Number of loads folded
+    3 phi-node-elimination         - Number of critical edges split
+  135 phi-node-elimination         - Number of phis lowered
+    3 pre-RA-sched                 - Number of loads clustered together
+  176 prologepilog                 - Number of bytes used for stack in all functions
+    6 prologepilog                 - Number of functions seen in PEI
+    9 prune-eh                     - Number of noreturn calls optimized
+   26 reassociate                  - Number of insts reassociated
+  258 regalloc                     - Number of registers assigned
+   76 regalloc                     - Number of copies inserted for splitting
+  109 regalloc                     - Number of instructions deleted by DCE
+   31 regalloc                     - Number of interferences evicted
+   21 regalloc                     - Number of splits finished
+    9 regalloc                     - Number of folded stack accesses
+   17 regalloc                     - Number of split global live ranges
+  112 regalloc                     - Number of identity moves eliminated after rewriting
+    3 regalloc                     - Number of dead lane conflicts tested
+    2 regalloc                     - Number of split local live ranges
+  135 regalloc                     - Number of new live ranges queued
+  144 regalloc                     - Number of instructions re-materialized
+   30 regalloc                     - Number of reloads inserted
+    2 regalloc                     - Number of reloads removed
+    7 regalloc                     - Number of rematerialized defs for spilling
+    1 regalloc                     - Number of rematerialized defs for splitting
+  145 regalloc                     - Number of shrinkToUses called
+   11 regalloc                     - Number of splits that were simple
+    1 regalloc                     - Number of spilled snippets
+   15 regalloc                     - Number of spill slots allocated
+   27 regalloc                     - Number of spilled live ranges
+   22 regalloc                     - Number of spills inserted
+    2 regalloc                     - Number of spills removed
+   37 regalloc                     - Number of registers unassigned
+  168 regalloc                     - Number of cross class joins performed
+  509 regalloc                     - Number of interval joins performed
+    6 scalar-evolution             - Number of loops with predictable loop counts
+   13 scalar-evolution             - Number of loops without predictable loop counts
+    3 sccp                         - Number of arguments constant propagated by IPSCCP
+    2 sccp                         - Number of instructions removed by IPSCCP
+    6 shrink-wrap                  - Number of functions
+   97 simplifycfg                  - Number of blocks simplified
+    3 simplifycfg                  - Number of common instructions sunk down to the end block
+   12 slotindexes                  - Number of local renumberings
+    1 sroa                         - Maximum number of partitions per alloca
+   26 sroa                         - Maximum number of uses of a partition
+  309 sroa                         - Number of alloca partition uses rewritten
+   44 sroa                         - Number of alloca partitions formed
+   44 sroa                         - Number of allocas analyzed for replacement
+  357 sroa                         - Number of instructions deleted
+   44 sroa                         - Number of allocas promoted to SSA values
+    5 stack-slot-coloring          - Number of stack slots eliminated due to coloring
+    6 stackmaps                    - Number of functions skipped
+    6 stackmaps                    - Number of functions visited
+    2 twoaddressinstruction        - Number of 3-address instructions sunk
+    2 twoaddressinstruction        - Number of instructions aggressively commuted
+    3 twoaddressinstruction        - Number of instructions commuted to coalesce
+   10 twoaddressinstruction        - Number of instructions promoted to 3-address
+    1 twoaddressinstruction        - Number of instructions re-scheduled down
+  123 twoaddressinstruction        - Number of two-address instructions
+    2 x86-cmov-conversion          - Number of CMOV-group candidates
+    1 x86-isel                     - Number of tail calls
+
+clang-8: warning: argument unused during compilation: '-mllvm -stats' [-Wunused-command-line-argument]
