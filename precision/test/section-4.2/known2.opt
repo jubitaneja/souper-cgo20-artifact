@@ -1,0 +1,5 @@
+%x:i4 = var
+%0:i8 = zext %x
+%y:i8 = var
+%1:i8 = lshr %0, %y 
+infer %1

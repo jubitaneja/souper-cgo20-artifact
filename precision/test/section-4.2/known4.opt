@@ -1,0 +1,4 @@
+%x:i8 = var
+%0:i8 = mulnsw 10:i8, %x
+%1:i8 = srem %0, 10:i8
+infer %1

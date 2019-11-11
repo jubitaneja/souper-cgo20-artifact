@@ -1,0 +1,3 @@
+%x:i16 = var
+%0:i16 = udiv %x, 100:i16
+infer %0

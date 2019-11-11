@@ -1,0 +1,2 @@
+%x:i64 = var (range=[1,3))
+infer %x

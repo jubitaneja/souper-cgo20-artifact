@@ -1,0 +1,5 @@
+%x:i32 = var
+%0:i32 = and 7:i32, %x
+%1:i32 = shl 1:i32, %0
+%2:i8 = trunc %1
+infer %2

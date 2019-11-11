@@ -1,0 +1,4 @@
+%x:i32 = var
+%0:i1 = eq 0:i32, %x
+%1:i32 = select %0, 1:i32, %x
+infer %1

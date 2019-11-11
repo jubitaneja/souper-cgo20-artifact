@@ -1,0 +1,4 @@
+%x:i64 = var (range=[1,0))
+%0:i64 = sub 0:i64, %x
+%1:i64 = and %x, %0
+infer %1

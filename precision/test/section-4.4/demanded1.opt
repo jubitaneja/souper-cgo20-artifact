@@ -1,0 +1,3 @@
+%x:i8 = var
+%0:i1 = slt %x, 0:i8
+infer %0

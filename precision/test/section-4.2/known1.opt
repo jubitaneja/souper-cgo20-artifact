@@ -1,0 +1,3 @@
+%x:i8 = var
+%0:i8 = shl 32:i8, %x
+infer %0

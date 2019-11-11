@@ -1,0 +1,4 @@
+%x:i8 = var
+%0:i8 = and 1:i8, %x
+%1:i8 = add %x, %0
+infer %1

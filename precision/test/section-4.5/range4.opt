@@ -1,0 +1,3 @@
+%x:i64 = var
+%0:i64 = udiv 128:i64, %x
+infer %0
