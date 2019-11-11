@@ -1,0 +1,3 @@
+%0:i8 = var
+%1:i8 = srem 4:i8, %0
+infer %1
