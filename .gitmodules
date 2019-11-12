@@ -7,3 +7,6 @@
 [submodule "performance/llvm-with-calls-to-souper"]
 	path = performance/llvm-with-calls-to-souper
 	url = https://github.com/zhengyangl/llvm-with-calls-to-souper.git
+[submodule "soundness/souper"]
+	path = soundness/souper
+	url = https://github.com/jubitaneja/souper.git
