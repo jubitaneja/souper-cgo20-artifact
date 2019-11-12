@@ -6,7 +6,7 @@ run set -x; \
         && apt-get autoremove -qq \
         && apt-get remove -y -qq clang llvm llvm-runtime \
 	&& apt-get install libgmp10 \
-	&& echo 'ca-certificates valgrind libc6-dev libgmp-dev cmake patch ninja-build make autoconf automake libtool golang-go python subversion re2c git gcc g++ libredis-perl' > /usr/src/build-deps \
+	&& echo 'ca-certificates valgrind libc6-dev libgmp-dev cmake time patch ninja-build make autoconf automake libtool golang-go python subversion re2c git gcc g++ libredis-perl' > /usr/src/build-deps \
 	&& apt-get install -y $(cat /usr/src/build-deps) --no-install-recommends \
 	&& git clone https://github.com/antirez/redis /usr/src/redis
 
@@ -89,5 +89,7 @@ env SOUPER_SOLVER -z3-path=/usr/src/artifact-cgo/precision/souper/third_party/z3
 #run cd /usr/src/artifact-cgo/precision/test \
 #	&& ./run.sh
 
-add performance/test /usr/src/artifact-cgo/performance/test
-
+add performance/test/bzip2 /usr/src/artifact-cgo/performance/test/bzip2
+add performance/test/gzip /usr/src/artifact-cgo/performance/test/gzip
+add performance/test/sqlite /usr/src/artifact-cgo/performance/test/sqlite
+add performance/test/stockfish /usr/src/artifact-cgo/performance/test/stockfish
