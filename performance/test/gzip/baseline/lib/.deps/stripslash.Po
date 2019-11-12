@@ -1,0 +1,17 @@
+stripslash.o: stripslash.c config.h dirname.h \
+  /home/liuz/jubi/using-souper-as-lib/build-baseline/lib/clang/8.0.0/include/stdbool.h \
+  /home/liuz/jubi/using-souper-as-lib/build-baseline/lib/clang/8.0.0/include/stddef.h \
+  /home/liuz/jubi/using-souper-as-lib/build-baseline/lib/clang/8.0.0/include/__stddef_max_align_t.h \
+  dosname.h
+
+config.h:
+
+dirname.h:
+
+/home/liuz/jubi/using-souper-as-lib/build-baseline/lib/clang/8.0.0/include/stdbool.h:
+
+/home/liuz/jubi/using-souper-as-lib/build-baseline/lib/clang/8.0.0/include/stddef.h:
+
+/home/liuz/jubi/using-souper-as-lib/build-baseline/lib/clang/8.0.0/include/__stddef_max_align_t.h:
+
+dosname.h:
