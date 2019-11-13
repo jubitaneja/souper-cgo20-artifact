@@ -13,12 +13,12 @@ fd-safer-flag.o: fd-safer-flag.c config.h unistd-safer.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stddef.h \
+  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stddef.h \
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/unistd.h \
-  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/__stddef_max_align_t.h
+  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/__stddef_max_align_t.h
 
 config.h:
 
@@ -62,7 +62,7 @@ unistd.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stddef.h:
+/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
@@ -72,4 +72,4 @@ unistd.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd.h:
 
-/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/__stddef_max_align_t.h:
+/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/__stddef_max_align_t.h:

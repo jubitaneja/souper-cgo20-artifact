@@ -5,7 +5,7 @@ gettime.o: gettime.c config.h timespec.h time.h /usr/include/time.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stddef.h \
+  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stddef.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
@@ -20,7 +20,7 @@ gettime.o: gettime.c config.h timespec.h time.h /usr/include/time.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/__stddef_max_align_t.h \
+  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/__stddef_max_align_t.h \
   arg-nonnull.h verify.h sys/time.h \
   /usr/include/x86_64-linux-gnu/sys/time.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
@@ -51,7 +51,7 @@ time.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stddef.h:
+/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
@@ -81,7 +81,7 @@ time.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
-/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/__stddef_max_align_t.h:
+/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/__stddef_max_align_t.h:
 
 arg-nonnull.h:
 

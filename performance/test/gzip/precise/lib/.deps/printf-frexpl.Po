@@ -1,5 +1,5 @@
 printf-frexpl.o: printf-frexpl.c config.h printf-frexp.c printf-frexpl.h \
-  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/float.h \
+  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/float.h \
   math.h /usr/include/math.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/features.h /usr/include/stdc-predef.h \
@@ -28,7 +28,7 @@ printf-frexp.c:
 
 printf-frexpl.h:
 
-/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/float.h:
+/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/float.h:
 
 math.h:
 

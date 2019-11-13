@@ -12,7 +12,7 @@ glthread/threadlib.o: glthread/threadlib.c config.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap-16.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
   /usr/include/sched.h \
-  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stddef.h \
+  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stddef.h \
   /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
@@ -27,7 +27,7 @@ glthread/threadlib.o: glthread/threadlib.c config.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/__stddef_max_align_t.h \
+  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/__stddef_max_align_t.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -85,7 +85,7 @@ config.h:
 
 /usr/include/sched.h:
 
-/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stddef.h:
+/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
@@ -119,7 +119,7 @@ time.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
-/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/__stddef_max_align_t.h:
+/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/__stddef_max_align_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 

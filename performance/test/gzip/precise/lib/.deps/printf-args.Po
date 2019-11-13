@@ -1,6 +1,6 @@
 printf-args.o: printf-args.c config.h printf-args.h \
-  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stddef.h \
-  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/__stddef_max_align_t.h \
+  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stddef.h \
+  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/__stddef_max_align_t.h \
   wchar.h /usr/include/features.h /usr/include/stdc-predef.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -10,7 +10,7 @@ printf-args.o: printf-args.c config.h printf-args.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stdarg.h \
+  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stdarg.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
@@ -25,9 +25,9 @@ config.h:
 
 printf-args.h:
 
-/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stddef.h:
+/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stddef.h:
 
-/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/__stddef_max_align_t.h:
+/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/__stddef_max_align_t.h:
 
 wchar.h:
 
@@ -53,7 +53,7 @@ wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stdarg.h:
+/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
