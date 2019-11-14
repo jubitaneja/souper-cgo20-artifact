@@ -48,8 +48,6 @@ run export GOPATH=/usr/src/go \
 
 env SOUPER_SOLVER -z3-path=/usr/src/artifact-cgo/precision/souper/third_party/z3-install/bin/z3
 
-#run cd
-
 # Performance setup
 add performance/souper /usr/src/artifact-cgo/performance/souper
 
@@ -85,21 +83,7 @@ add precision/test /usr/src/artifact-cgo/precision/test
 env SOUPER_PREC /usr/src/artifact-cgo/precision
 env SOUPER_SOLVER -z3-path=/usr/src/artifact-cgo/precision/souper/third_party/z3-install/bin/z3
 
-# Test precision (Section 4.2 to 4.5)
-#run cd /usr/src/artifact-cgo/precision/test \
-#	&& ./run.sh
-
 add performance/test /usr/src/artifact-cgo/performance/test
-
-#add performance/test/bzip2 /usr/src/artifact-cgo/performance/test/bzip2
-#add performance/test/gzip /usr/src/artifact-cgo/performance/test/gzip
-#add performance/test/sqlite /usr/src/artifact-cgo/performance/test/sqlite
-#add performance/test/stockfish /usr/src/artifact-cgo/performance/test/stockfish
-#
-##add performance/test/perf.sh /usr/src/artifact-cgo/performance/test/perf.sh
-#add performance/test/main.sh /usr/src/artifact-cgo/performance/test/main.sh
-#add performance/test/prepare.sh /usr/src/artifact-cgo/performance/test/prepare.sh
-#add performance/test/bzip2.sh /usr/src/artifact-cgo/performance/test/bzip2.sh
 
 # Soundness bugs repro repo.
 add soundness/souper /usr/src/artifact-cgo/soundness/souper
