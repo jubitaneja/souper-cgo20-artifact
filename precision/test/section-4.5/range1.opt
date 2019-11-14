@@ -1,4 +1,4 @@
-%x:i32 = var
-%0:i1 = eq 0:i32, %x
-%1:i32 = select %0, 1:i32, %x
+%x:i8 = var
+%0:i1 = eq 0:i8, %x
+%1:i8 = select %0, 1:i8, %x
 infer %1
