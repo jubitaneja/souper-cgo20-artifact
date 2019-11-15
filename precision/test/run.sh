@@ -84,3 +84,5 @@ for i in `ls $RANGE_TEST_CASES/range*.opt`; do
     echo;
     echo;
 done
+
+echo "Precision testing is all done !!! You can understand the results by reading the README file on GitHub page."

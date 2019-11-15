@@ -60,4 +60,7 @@ echo "********************************************"
 echo "NOTE for reviewers: You will notice that dataflow facts computed by
 LLVM compiler are more precise than computed by our tool, Souper. That's
 where we detect unsoundness in LLVM's analysis with these examples."
+
+echo "Soundness Testing is all done !!!"
 echo "********************************************"
+echo
