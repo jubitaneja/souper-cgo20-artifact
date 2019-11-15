@@ -60,7 +60,12 @@ for line in lines:
 avg_baseCompTime = float(baseCompTime / 3)			
 avg_souperCompTime = float(souperCompTime / 3)			
 
+speedup_comp = float(((avg_baseCompTime - avg_souperCompTime)/(avg_baseCompTime))*100)
+
 print("\nAvg Baseline SQLite = "+ str(avg_baseCompTime))			
 print("\nAvg Precise SQLite = "+ str(avg_souperCompTime))			
 
 print "\n"
+print("\nSpeedup in SQLite = " + str(speedup_comp) + "%")
+print "------------------------------------------------\n"
+
