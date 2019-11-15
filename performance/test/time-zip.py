@@ -86,10 +86,17 @@ avg_baseDecompTime = float(baseDecompTime / 3)
 avg_souperCompTime = float(souperCompTime / 3)			
 avg_souperDecompTime = float(souperDecompTime / 3)
 
+speedup_comp = float(((avg_baseCompTime - avg_souperCompTime)/(avg_baseCompTime))*100)
+speedup_decomp = float(((avg_baseDecompTime - avg_souperDecompTime)/(avg_baseDecompTime))*100)
+
 print("\nAvg Baseline Compression time = "+ str(avg_baseCompTime))			
 print("\nAvg Precise Compression time = "+ str(avg_souperCompTime))			
 print "\n"
+print("\nSpeedup in compression time = " + str(speedup_comp) + "%")
+print "------------------------------------------------\n"
 print("\nAvg Baseline Decompression time = "+ str(avg_baseDecompTime))			
 print("\nAvg Precise Decompression time = "+ str(avg_souperDecompTime))			
 print "\n"
+print("\nSpeedup in decompression time = " + str(speedup_decomp) + "%")
+print "------------------------------------------------\n"
 
