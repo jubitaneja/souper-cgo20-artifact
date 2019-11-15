@@ -28,4 +28,5 @@ for i in {1..3}; do
 done
 
 echo
+echo "The results are saved in result-bzip.txt file"
 echo
