@@ -42,10 +42,10 @@ for line in lines:
     if 'precise' in line:
         baseComp = False
         souperComp = True
-    if 'real' in line or 'user' in line or 'sys' in line:
+    if 'Total time (ms)' in line:
 		#print line
 		#timeReg = time_re.match(line)
-		timeReg = re.search('(?P<secs>[0-9]+.[0-9]+)', line)
+		timeReg = re.search('(?P<secs>[0-9]+)', line)
 		if timeReg is not None:
 			sec = timeReg.group(0)
 		else:
@@ -57,13 +57,13 @@ for line in lines:
 		elif souperComp == True:
 			souperCompTime = souperCompTime + time
 
-avg_baseCompTime = float(baseCompTime / 3)			
-avg_souperCompTime = float(souperCompTime / 3)			
+avg_baseCompTime = float((baseCompTime / 3)/1000)			
+avg_souperCompTime = float((souperCompTime / 3)/1000)			
 
 speedup_comp = float(((avg_baseCompTime - avg_souperCompTime)/(avg_baseCompTime))*100)
 
-print("\nAvg Baseline SQLite = "+ str(avg_baseCompTime) + " sec")			
-print("\nAvg Precise SQLite = "+ str(avg_souperCompTime) + " sec")			
+print("\nAvg total time for Baseline Stockfish = "+ str(avg_baseCompTime) + " sec")			
+print("\nAvg total time for Precise Stockfish = "+ str(avg_souperCompTime) + "sec")			
 
 print "\n"
 print("\nSpeedup in SQLite = " + str(speedup_comp) + "%")
