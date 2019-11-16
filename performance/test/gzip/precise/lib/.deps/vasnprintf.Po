@@ -1,7 +1,7 @@
 vasnprintf.o: vasnprintf.c config.h alloca.h vasnprintf.h \
-  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stdarg.h \
-  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stddef.h \
-  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/__stddef_max_align_t.h \
+  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stdarg.h \
+  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stddef.h \
+  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/__stddef_max_align_t.h \
   /usr/include/locale.h /usr/include/features.h \
   /usr/include/stdc-predef.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -60,20 +60,20 @@ vasnprintf.o: vasnprintf.c config.h alloca.h vasnprintf.h \
   /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
   /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
   limits.h \
-  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/limits.h \
+  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/limits.h \
   /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
   /usr/include/x86_64-linux-gnu/bits/local_lim.h \
   /usr/include/linux/limits.h \
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/float.h \
+  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/float.h \
   printf-parse.h printf-args.h wchar.h /usr/include/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/wchar2.h xsize.h \
-  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stdint.h \
+  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h verify.h
 
@@ -83,11 +83,11 @@ alloca.h:
 
 vasnprintf.h:
 
-/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stdarg.h:
+/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stdarg.h:
 
-/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stddef.h:
+/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stddef.h:
 
-/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/__stddef_max_align_t.h:
+/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/__stddef_max_align_t.h:
 
 /usr/include/locale.h:
 
@@ -229,7 +229,7 @@ string.h:
 
 limits.h:
 
-/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/limits.h:
+/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/limits.h:
 
 /usr/include/limits.h:
 
@@ -245,7 +245,7 @@ limits.h:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
-/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/float.h:
+/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/float.h:
 
 printf-parse.h:
 
@@ -265,7 +265,7 @@ wchar.h:
 
 xsize.h:
 
-/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stdint.h:
+/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stdint.h:
 
 /usr/include/stdint.h:
 

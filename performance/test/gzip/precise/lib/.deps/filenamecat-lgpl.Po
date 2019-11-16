@@ -7,7 +7,7 @@ filenamecat-lgpl.o: filenamecat-lgpl.c config.h filenamecat.h stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stddef.h \
+  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stddef.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
@@ -41,11 +41,11 @@ filenamecat-lgpl.o: filenamecat-lgpl.c config.h filenamecat.h stdlib.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib.h \
-  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/__stddef_max_align_t.h \
+  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/__stddef_max_align_t.h \
   string.h /usr/include/string.h /usr/include/strings.h \
   /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/string_fortified.h dirname.h \
-  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stdbool.h \
+  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stdbool.h \
   dosname.h
 
 config.h:
@@ -72,7 +72,7 @@ stdlib.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stddef.h:
+/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
@@ -146,7 +146,7 @@ alloca.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
-/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/__stddef_max_align_t.h:
+/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/__stddef_max_align_t.h:
 
 string.h:
 
@@ -160,6 +160,6 @@ string.h:
 
 dirname.h:
 
-/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stdbool.h:
+/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stdbool.h:
 
 dosname.h:

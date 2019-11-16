@@ -11,7 +11,7 @@ fcntl.o: fcntl.c config.h fcntl.h sys/types.h \
   /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stddef.h \
+  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stddef.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -37,7 +37,7 @@ fcntl.o: fcntl.c config.h fcntl.h sys/types.h \
   /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
   /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
   limits.h \
-  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/limits.h \
+  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/limits.h \
   /usr/include/limits.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -46,7 +46,7 @@ fcntl.o: fcntl.c config.h fcntl.h sys/types.h \
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stdarg.h \
+  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stdarg.h \
   unistd.h /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -54,7 +54,7 @@ fcntl.o: fcntl.c config.h fcntl.h sys/types.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/unistd.h \
-  /home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/__stddef_max_align_t.h
+  /home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/__stddef_max_align_t.h
 
 config.h:
 
@@ -90,7 +90,7 @@ sys/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
-/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stddef.h:
+/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
@@ -154,7 +154,7 @@ sys/types.h:
 
 limits.h:
 
-/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/limits.h:
+/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/limits.h:
 
 /usr/include/limits.h:
 
@@ -172,7 +172,7 @@ limits.h:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
-/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/stdarg.h:
+/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/stdarg.h:
 
 unistd.h:
 
@@ -190,4 +190,4 @@ unistd.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd.h:
 
-/home/liuz/jubi/using-souper-as-lib/llvm-with-calls-to-souper/build/lib/clang/8.0.0/include/__stddef_max_align_t.h:
+/home/liuz/jubi/using-souper-as-lib/build/lib/clang/8.0.0/include/__stddef_max_align_t.h:
