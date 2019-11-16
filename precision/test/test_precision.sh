@@ -21,8 +21,8 @@ SOUPER_DEMANDED_ARGS="-infer-demanded-bits"
 LLVM_DEMANDED_ARG="-print-demanded-bits-from-harvester"
 
 RANGE_TEST_CASES=$SOUPER_PREC/test/section-4.5
-SOUPER_RANGE_ARGS="-infer-range -souper-range-max-precise "
-LLVM_RANGE_ARG="-print-range-at-return -souper-range-max-tries=300"
+SOUPER_RANGE_ARGS="-infer-range -souper-range-max-precise -souper-range-max-tries=300"
+LLVM_RANGE_ARG="-print-range-at-return"
 
 
 echo "===========================================";
