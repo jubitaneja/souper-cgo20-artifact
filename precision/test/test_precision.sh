@@ -1,3 +1,5 @@
+#!/bin/bash
+
 SOUPER_PREC=/usr/src/artifact-cgo/precision
 SOUPER_BUILD=$SOUPER_PREC/souper-build
 SOUPER=$SOUPER_BUILD/souper

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 SOUPER_SOUND=/usr/src/artifact-cgo/soundness
 SOUPER_BUILD=$SOUPER_SOUND/souper/build
 SOUPER=$SOUPER_BUILD/souper
