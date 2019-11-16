@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 BZIP2_DIR=/usr/src/artifact-cgo/performance/test/bzip2
 BASELINE_BZIP2=$BZIP2_DIR/baseline

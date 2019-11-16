@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 SQLITE_DIR=/usr/src/artifact-cgo/performance/test/sqlite
 BASELINE_SQLITE=$SQLITE_DIR/baseline

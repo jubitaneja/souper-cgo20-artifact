@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 RESULT_DIR=/usr/src/artifact-cgo/performance/test/
 

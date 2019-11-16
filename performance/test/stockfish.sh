@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 STOCKFISH_DIR=/usr/src/artifact-cgo/performance/test/stockfish
 BASELINE_STOCKFISH=$STOCKFISH_DIR/baseline/src

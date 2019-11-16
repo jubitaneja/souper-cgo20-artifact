@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 GZIP_DIR=/usr/src/artifact-cgo/performance/test/gzip
 BASELINE_GZIP=$GZIP_DIR/baseline
