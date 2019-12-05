@@ -56,7 +56,7 @@ files."
 echo
 ls result-*.txt
 echo
-echo"Now, we will quickly get the final numbers to compare performance of baseline with precise version."
+echo "Now, we will quickly get the final numbers to compare performance of baseline with precise version."
 echo
 echo "==================================="; 
 echo "Final result of bzip2";

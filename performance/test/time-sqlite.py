@@ -42,7 +42,8 @@ for line in lines:
     if 'precise' in line:
         baseComp = False
         souperComp = True
-    if 'real' in line or 'user' in line or 'sys' in line:
+    #if 'real' in line or 'user' in line or 'sys' in line:
+    if 'user' in line or 'sys' in line:
 		#print line
 		#timeReg = time_re.match(line)
 		timeReg = re.search('(?P<secs>[0-9]+.[0-9]+)', line)
