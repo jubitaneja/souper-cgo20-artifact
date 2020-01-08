@@ -59,7 +59,7 @@ $ export PS1="(docker) $PS1"
 This command will load and run the docker image, and `-it`
 option attaches you an interactive tty container.
 
-# Experimental Evaluation
+# Section 3: Experimental Evaluation
 
 After you have successfully run the docker image, you can
 go the path:
@@ -133,7 +133,7 @@ here.
 - Test for equality can be resolved at compile time sometimes using dataflow
   analysis [[Ref:5]](https://reviews.llvm.org/D3868).
 
-# Analysis of the Results
+# Section 2: Analysis of the Results
 
 ## Section 4.1
 
@@ -679,7 +679,7 @@ and `Function: foo` is a candidate harvested by Souper.
 This is not giving us any relevant information, so
 you can ignore these parts.
 
-# Experiment Customization
+# Section 4: Experiment Customization
 
 You can easily customize test inputs written in the Souper IR,
 and try different dataflow facts options to compute the
