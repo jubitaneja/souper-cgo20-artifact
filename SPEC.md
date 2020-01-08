@@ -34,7 +34,7 @@ consumes a lot of memory. For instance, we set the memory limit to
 ```
 (docker) $ ulimit -Sv 2000000
 ```
-### Set Execution Time
+### Set Execution Timeout
 We also limit execution time of `souper-check` and `Z3` in `crontab`
 to keep running these experiments at a faster pace. Note: `crontab` is not shipped in our docker image, ignore this section if you're working inside docker.
 
