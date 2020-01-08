@@ -1,3 +1,5 @@
+# Precision Testing of SPEC CPU 2017 Benchmark
+
 **Main Idea:** For the evaluation of Section 4.1, we compiled
 SPEC CPU 2017 benchmark with Souper and cached
 the Souper expressions in Redis. The cache is shipped with our docker image.
