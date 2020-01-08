@@ -99,4 +99,4 @@ run export CC=cc CXX=c++ \
 	&& cmake -DCMAKE_BUILD_TYPE=Release -G Ninja ../ \
 	&& ninja
 
-
+add scripts /usr/src/artifact-cgo/scripts
