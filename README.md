@@ -776,3 +776,7 @@ and from LLVM compiler are as shown in the Table below.
   For demanded bits computation only from LLVM compiler, use `souper2llvm-db`
   to translate a given Souper IR to LLVM IR.
 
+- To build your own programs using a clang compiler with our maximally precicise data flow algorithms,
+  you can point the CC and CXX environment variable to `/usr/src/artifact-cgo/performance/llvm-build/bin/clang` and
+  `/usr/src/artifact-cgo/performance/llvm-build/bin/clang++`.
+
