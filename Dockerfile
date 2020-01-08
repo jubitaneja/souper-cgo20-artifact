@@ -34,7 +34,7 @@ add precision/spec/dump.rdb.gz /usr/src/artifact-cgo/precision/dump.rdb.gz
 
 run service redis-server stop \
     && gzip -d -c /usr/src/artifact-cgo/precision/dump.rdb > /var/lib/redis/dump.rdb \
-    && chown redis: /var/lib/redis/dump.rdb \
+    && chown redis: /var/lib/redis/dump.rdb
 
 run export GOPATH=/usr/src/go \
 	&& mkdir -p /usr/src/artifact-cgo/precision/souper-build \
