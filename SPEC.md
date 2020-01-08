@@ -43,10 +43,10 @@ to keep running these experiments at a faster pace.
 (docker) $ crontab -e
 ```
 
-Insert following crontab entries.
+Add following crontab entries.
 ```
-*/5 * * * *  killall -u root -older-than 5m souper-check
-*/5 * * * *  killall -u root -older-than 5m z3
+*/5 * * * *  killall -u root -older-than 15m souper-check
+*/5 * * * *  killall -u root -older-than 15m z3
 ```
 
 ### Run Precision Testing Script
