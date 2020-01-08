@@ -6,7 +6,7 @@ our work that is accepted at the **CGO 2020**.
 Our work is open source. You can build it easily with some assumptions
 on pre-requisites listed further.
 
-# Section 1: Build and Run the artifact
+# Section 1: Build and Run the Artifact
 
 ## Requirements
 Souper should run on a modern Linux or OSX machine.
@@ -30,7 +30,9 @@ Our evaluation involves [SPEC CPU 2017](https://www.spec.org/cpu2017/)
 benchmark. We cannot provide a copy of this benchmark as restricted
 by the SPEC License Agreement. For details, check
 [this](https://www.spec.org/cpu2017/docs/licenses.html).
-Instead, we provide all the Souper expression extracted from SPEC CPU benchmarks in our docker file.
+Instead, we provide the Redis databse of
+all input Souper expression collected from compiling the SPEC CPU benchmarks
+with Souper in the artifact.
 
 ## Steps to follow
 1. Fetch the docker image from docker hub.
@@ -57,7 +59,8 @@ $ export PS1="(docker) $PS1"
 This command will load and run the docker image, and `-it`
 option attaches you an interactive tty container.
 
-3. Evaluate the experiments.
+# Experimental Evaluation
+
 After you have successfully run the docker image, you can
 go the path:
 ```
@@ -66,7 +69,7 @@ go the path:
 This directory contains the entire setup of our tool.
 
 ### Evaluation: Section 4.1
-Refer [here](SPEC.md) for the instructions to reproduce the results.
+Refer [here](SPEC.md) for detailed instructions to reproduce the results.
 
 ### Evaluation: Section 4.2 to 4.5
 These sections evaluates the precision of several
@@ -130,7 +133,7 @@ here.
 - Test for equality can be resolved at compile time sometimes using dataflow
   analysis [[Ref:5]](https://reviews.llvm.org/D3868).
 
-# Analyzing the results
+# Analysis of the Results
 
 ## Section 4.1
 
