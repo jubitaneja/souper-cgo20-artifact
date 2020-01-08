@@ -6,6 +6,12 @@ our work that is accepted at the **CGO 2020**.
 Our work is open source. You can build it easily with some assumptions
 on pre-requisites listed further.
 
+## Contents
+1. [Build and Run the Artifact](#section-1-build-and-run-the-artifact)
+2. [Experimental Evaluation](#section-2-experimental-evaluation)
+3. [Analysis of the Results](#section-3-analysis-of-the-results)
+4. [Experiment Customization](#section-4-experiment-customization)
+
 # Section 1: Build and Run the Artifact
 
 ## Requirements
@@ -59,7 +65,7 @@ $ export PS1="(docker) $PS1"
 This command will load and run the docker image, and `-it`
 option attaches you an interactive tty container.
 
-# Section 3: Experimental Evaluation
+# Section 2: Experimental Evaluation
 
 After you have successfully run the docker image, you can
 go the path:
@@ -67,6 +73,8 @@ go the path:
 (docker) $ cd /usr/src/artifact-cgo
 ```
 This directory contains the entire setup of our tool.
+This section provides details on how to evaluate the
+results section in our paper.
 
 ## Evaluation: Section 4.1
 Refer [here](SPEC.md) for detailed instructions to reproduce the results.
@@ -133,7 +141,7 @@ here.
 - Test for equality can be resolved at compile time sometimes using dataflow
   analysis [[Ref:5]](https://reviews.llvm.org/D3868).
 
-# Section 2: Analysis of the Results
+# Section 3: Analysis of the Results
 
 ## Section 4.1
 
