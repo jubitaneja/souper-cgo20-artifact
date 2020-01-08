@@ -3,7 +3,11 @@
 This repository guides you to build and test
 our work that is accepted at the **CGO 2020**.
 
-Our work is open source. You can build it easily with some assumptions
+Our work builds on an open source
+superoptimizer for LLVM IR, Souper.
+It tests the precision and soundness of
+LLVM's dataflow analyses for version 8.0.
+You can build it easily with some assumptions
 on pre-requisites listed further.
 
 ## Contents
