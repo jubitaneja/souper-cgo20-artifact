@@ -64,7 +64,7 @@ Make sure you set and move to the path:
 (docker) $ export CGO_HOME=/usr/src/artifact-cgo
 (docker) $ cd $CGO_HOME
 ```
-- For known bits dataflow fact:
+- **For known bits dataflow fact:**
 ```
 (docker) $ mkdir $CGO_HOME/known && cd $CGO_HOME/known
 (docker) $ $CGO_HOME/precision/souper-build/cache_dfa --knownbits
