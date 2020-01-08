@@ -9,7 +9,6 @@ us against what an LLVM compiler computes.
 
 First, let us make sure the redis-server is serving the Souper expressions of SPEC CPU benchmarks. You can check the keyspace by:
 ```
-(docker) $ killall redis-server
 (docker) $ cd /usr/src/artifact-cgo/precision/spec && redis-server &
 (docker) $ redis-cli dbsize
 ```
