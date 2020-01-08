@@ -61,7 +61,7 @@ by the SPEC License Agreement. For details, check
 
 For Table 1 in paper, we assume you have a SPEC ISO image, version 1.0.1.
 
-### Steps to follow
+## Steps to follow
 1. Fetch the docker image from docker hub. Alternatively, you can build the docker image by following the instructions from [here](BUILD.md).
 ```
 $ sudo docker pull jubitaneja/artifact-cgo:latest
