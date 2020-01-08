@@ -18,7 +18,7 @@ This should return `269,113`.
 
 ```
 (docker) $ export SOUPER_IGNORE_SOLVER_ERRORS=1
-(docker) $ export SOUPER_SOLVER="-z3-path=/"
+(docker) $ export SOUPER_SOLVER="-z3-path=/usr/src/artifact-cgo/precision/souper/third_party/z3-install/bin/z3"
 ```
 
 # Evaluation: Table 1 (Precision Testing of each DFA)
