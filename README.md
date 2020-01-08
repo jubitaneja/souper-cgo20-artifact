@@ -29,10 +29,10 @@ evaluation experiment which takes the longest in manual
 setup.**
 
 The analysis of results are discussed
-[here](https://github.com/jubitaneja/artifact-cgo#analyzing-the-results).
+[here](#analyzing-the-results).
 We also provide guidelines for
 customizing
-experiments [here](https://github.com/jubitaneja/artifact-cgo#customization-how-to-use-our-tool-for-extended-testing).
+experiments [here](#customization-how-to-use-our-tool-for-extended-testing).
 
 # Approach 1: Using Docker Image
 
@@ -92,7 +92,7 @@ This directory contains the entire setup of our tool.
 This section makes use of SPEC CPU 2017 benchmark
 that we cannot share directly in the docker image.
 For this, you will need your own ISO image and follow
-the instructions [here](https://github.com/jubitaneja/artifact-cgo#evaluation-section-41-1)
+the instructions [here](#evaluation-section-41-1)
 to reproduce the results.
 
 ### Evaluation: Section 4.2 to 4.5
@@ -127,7 +127,7 @@ $ ./test_performance.sh
 
 This will take about 40-50 minutes to finish. If you
 want to understand what's happening, please refer the
-details mentioned [further](https://github.com/jubitaneja/artifact-cgo#section-46).
+details mentioned [further](#section-46).
 
 ### Evaluation: Section 4.7
 This section evaluates three soundness bugs
