@@ -5,21 +5,9 @@ harvested by Souper, we compare the dataflow
 facts computed by precise algorithms written by
 us against what an LLVM compiler computes.
 
-As you go ahead and follow the instructions
-to build SPEC benchmark, at one point you
-will be asked to specify the path of `sclang`
-binary. Don't feel lost here! :) You simply
-have to specify the absolute path of this
-binary which is compiled at
-`artifact-cgo/scratch/precision/souper/build/sclang`
-
-Well, you don't have to memorize this, we wanted
-to mention it ahead-of-time as well.
-
 # Build and Install SPEC CPU 2017
 
-As mentioned earlier that we cannot share the SPEC ISO
-image directly. We are assuming that you have the SPEC CPU 2017 benchmarks installed in the directory /usr/src/cpu2017.
+As mentioned earlier that we cannot share the SPEC ISO image directly. We are assuming that you have the SPEC CPU 2017 benchmarks installed in the directory /usr/src/cpu2017.
 
 - Copy `souper-cache.cfg` from https://gist.github.com/zhengyangl/9d6c79beded94584f35292ee00c964e9
 ..to `$souper_prec/cpu2017/config`
