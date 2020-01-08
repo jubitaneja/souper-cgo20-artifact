@@ -9,16 +9,16 @@ us against what an LLVM compiler computes.
 
 First, let us make sure the redis-server is serving the Souper expressions of SPEC CPU benchmarks. You can check the keyspace by:
 ```
-$ redis-cli dbsize
+(docker) $ redis-cli dbsize
 ```
 This should return `269,113`.
 
 # Set Souper environment variables
 
 ```
-$ export SOUPER_IGNORE_SOLVER_ERRORS=1
-$ export SOUPER_SOLVER="-z3-path=/"
-$ export SOUPER_PRECISION="/usr/src/artifact-cgo/precision"
+(docker) $ export SOUPER_IGNORE_SOLVER_ERRORS=1
+(docker) $ export SOUPER_SOLVER="-z3-path=/"
+(docker) $ export SOUPER_PRECISION="/usr/src/artifact-cgo/precision"
 ```
 
 # Evaluation: Table 1 (Precision Testing of each DFA)
@@ -32,16 +32,20 @@ by using the entire swap space. The precision testing experiment
 consumes a lot of memory. For instance, we set the memory limit to
 2GB in our experiments.
 ```
-$ ulimit -Sv 2000000
+(docker) $ ulimit -Sv 2000000
 ```
 ### Set Execution Time
 We also limit execution time of `souper-check` and `Z3` in `crontab`
 to keep running these experiments at a faster pace.
-Insert your user name in the following command.
+
 ```
-$ crontab -e
-*/5 * * * *  killall -u YourUserName -older-than 5m souper-check
-*/5 * * * *  killall -u YourUserName -older-than 15m z3
+(docker) $ crontab -e
+```
+
+Insert following crontab entries.
+```
+*/5 * * * *  killall -u root -older-than 5m souper-check
+*/5 * * * *  killall -u root -older-than 5m z3
 ```
 
 ### Run Precision Testing Script
