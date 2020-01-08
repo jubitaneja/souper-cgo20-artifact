@@ -74,7 +74,7 @@ jubitaneja/artifact-cgo   latest              d5bc1be66342        2 hours ago   
 
 2. Run the docker image.
 ```
-$ sudo docker run -it --privileged jubitaneja/artifact-cgo /bin/bash
+$ sudo docker run -it jubitaneja/artifact-cgo /bin/bash
 ```
 This command will load and run the docker image, and `-it`
 option attaches you an interactive tty container.
