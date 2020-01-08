@@ -37,9 +37,9 @@ add precision/souper/tools /usr/src/artifact-cgo/precision/souper/tools
 add precision/souper/utils /usr/src/artifact-cgo/precision/souper/utils
 add precision/souper/runtime /usr/src/artifact-cgo/precision/souper/runtime
 add precision/souper/unittests /usr/src/artifact-cgo/precision/souper/unittests
-add precision/spec/dump.rdb.7z /usr/src/artifact-cgo/precision/dump.rdb.7z
+add precision/spec/dump.rdb.7z /usr/src/artifact-cgo/precision/spec/dump.rdb.7z
 
-run 7z e /usr/src/artifact-cgo/precision/dump.rdb.7z -o/usr/src/artifact-cgo/precision/ && rm /usr/src/artifact-cgo/precision/dump.rdb.7z
+run 7z e /usr/src/artifact-cgo/precision/spec/dump.rdb.7z -o/usr/src/artifact-cgo/precision/spec/ && rm /usr/src/artifact-cgo/precision/spec/dump.rdb.7z
 
 run export GOPATH=/usr/src/go \
 	&& mkdir -p /usr/src/artifact-cgo/precision/souper-build \
