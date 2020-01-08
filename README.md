@@ -75,6 +75,7 @@ jubitaneja/artifact-cgo   latest              d5bc1be66342        2 hours ago   
 2. Run the docker image.
 ```
 $ sudo docker run -it jubitaneja/artifact-cgo /bin/bash
+$ export PS1="(docker) $PS1"
 ```
 This command will load and run the docker image, and `-it`
 option attaches you an interactive tty container.
@@ -83,7 +84,7 @@ option attaches you an interactive tty container.
 After you have successfully run the docker image, you can
 go the path:
 ```
-$ cd /usr/src/artifact-cgo
+(docker) $ cd /usr/src/artifact-cgo
 ```
 This directory contains the entire setup of our tool.
 
@@ -95,8 +96,8 @@ These sections evaluates the precision of several
 dataflow analyses as shown in examples in the paper.
 Run the script to reproduce the results.
 ```
-$ cd /usr/src/artifact-cgo/precision/test
-$ ./test_precision.sh
+(docker) $ cd /usr/src/artifact-cgo/precision/test
+(docker) $ ./test_precision.sh
 ```
 
 ### Evaluation: Section 4.6
@@ -116,8 +117,8 @@ this experiment setting by generating a random
 
 Run the script to reproduce the results for all applications.
 ```
-$ cd /usr/src/artifact-cgo/performance/test
-$ ./test_performance.sh
+(docker) $ cd /usr/src/artifact-cgo/performance/test
+(docker) $ ./test_performance.sh
 ```
 
 This will take about 40-50 minutes to finish. If you
@@ -128,8 +129,8 @@ details mentioned [further](#section-46).
 This section evaluates three soundness bugs
 as discussed in the paper. Run the script:
 ```
-$ cd /usr/src/artifact-cgo/soundness/test
-$ ./test_sound.sh
+(docker) $ cd /usr/src/artifact-cgo/soundness/test
+(docker) $ ./test_sound.sh
 ```
 
 ### Evaluation: Section 4.8
@@ -181,9 +182,8 @@ in the paper, you just have to run this
 ```
 # Go to the main directory of this repo.
 
-$ export CGO_HOME=$(pwd)/artifact-cgo
-$ cd $CGO_HOME
-$ ./section-4.1/extra-scripts/process-all.sh
+(docker) $ cd /usr/src/artifact-cgo
+(docker) $ ./scripts/process-all.sh
 ```
 
 This script will give you the count of parameters like,
@@ -780,9 +780,7 @@ and from LLVM compiler are as shown in the Table below.
   For demanded bits computation only from LLVM compiler, use `souper2llvm-db`
   to translate a given Souper IR to LLVM IR.
 
-### More experiments
-
-  You can follow instructions
+  You can also follow instructions
   of [Section 4.6](https://github.com/jubitaneja/artifact-cgo/tree/master/section-4.6)
   to evaluate the performance of any other benchmarks as well.
 
