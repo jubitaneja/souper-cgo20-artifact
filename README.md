@@ -143,7 +143,7 @@ here.
 
 # Section 3: Analysis of the Results
 
-## Section 4.1
+## Analysis: Section 4.1
 
 The precision testing results are saved in individual
 files for each analysis. For instance,
@@ -185,7 +185,7 @@ tries for constant synthesis, not limiting
 the execution time on Z3 and souper-check processes
 through crontab, etc.
 
-## Section 4.2
+## Analysis: Section 4.2
 
 You are analyzing known bits computed by
 our tool - Souper, and LLVM compiler.
@@ -250,7 +250,7 @@ precise than LLVM compiler.
 
 Likewise, you can now analyze other examples included in the result.
 
-## Section 4.3
+## Analysis: Section 4.3
 
 You are analyzing the power of two dataflow
 analysis results. The output should look like this.
@@ -298,7 +298,7 @@ can prove that given input test is a power of two.
 
 Now, you can analyze rest of the examples in this section.
 
-## Section 4.4
+## Analysis: Section 4.4
 
 You are analyzing demanded bits results in this section.
 The output should look like this.
@@ -355,7 +355,7 @@ Hence, Souper computes precise fact than LLVM.
 
 Likewise, you can now verify other examples in this section.
 
-## Section 4.5
+## Analysis: Section 4.5
 
 You are analyzing integer range analysis results in
 this section. The output should look like this.
@@ -412,7 +412,7 @@ the result will not be zero, but any other number.
 Likewise, you can now analyze other examples in this
 section.
 
-## Section 4.6
+## Analysis: Section 4.6
 
 In this section, you are analyzing the results
 shown in Table 2 in the paper. When you will
@@ -633,7 +633,7 @@ Speedup in SQLite = 0.826177481551%
 architecture you are using, and what is the configuration
 of the machine or because of several other factors.
 
-## Section 4.7
+## Analysis: Section 4.7
 
 You are analyzing the soundness bugs in this section.
 We reproduced these soundness bugs by forward porting
