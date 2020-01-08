@@ -7,14 +7,7 @@ run set -x; \
         && apt-get remove -y -qq clang llvm llvm-runtime \
 	&& apt-get install libgmp10 \
 	&& echo 'ca-certificates vim libc6-dev libgmp-dev cmake time patch ninja-build make autoconf automake libtool golang-go python subversion re2c git gcc g++ libredis-perl redis-server' > /usr/src/build-deps \
-	&& apt-get install -y $(cat /usr/src/build-deps) --no-install-recommends \
-	&& git clone https://github.com/antirez/redis /usr/src/redis
-
-run export CC=cc CXX=c++ \
-        && cd /usr/src/redis \
-	&& git checkout 5.0.3 \
-	&& make -j10 \
-	&& make install
+	&& apt-get install -y $(cat /usr/src/build-deps) --no-install-recommends
 
 run export GOPATH=/usr/src/go \
 	&& go get github.com/gomodule/redigo/redis
@@ -42,7 +35,6 @@ add precision/spec/dump.rdb.gz /usr/src/artifact-cgo/precision/dump.rdb.gz
 run service redis-server stop \
     && gzip -d -c /usr/src/artifact-cgo/precision/dump.rdb > /var/lib/redis/dump.rdb \
     && chown redis: /var/lib/redis/dump.rdb \
-    && service redis-server start
 
 run export GOPATH=/usr/src/go \
 	&& mkdir -p /usr/src/artifact-cgo/precision/souper-build \

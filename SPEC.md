@@ -1,59 +1,25 @@
-**Main Idea:** For the evaluation of Section 4.1, we compile
-SPEC CPU 2017 benchmark with Souper. We cache
-the Souper expressions in Redis. For each expression
-harvested by Souper, we compare the dataflow
+**Main Idea:** For the evaluation of Section 4.1, we compiled
+SPEC CPU 2017 benchmark with Souper and cached
+the Souper expressions in Redis. The cache is shipped with our docker image.
+For each expression harvested by Souper, we compare the dataflow
 facts computed by precise algorithms written by
 us against what an LLVM compiler computes.
 
-# Configure SPEC CPU 2017
-
-As mentioned earlier that we cannot share the SPEC ISO image directly. We are assuming that you have the SPEC CPU 2017 benchmarks installed in the directory `/usr/src/cpu2017` inside Docker.
-
-- Copy `souper-cache.cfg` from https://gist.github.com/zhengyangl/9d6c79beded94584f35292ee00c964e9
-..to `$souper_prec/cpu2017/config`
-
-- You can update `sclang` binary path ($souper_prec/souper/build/sclang)
-in `$souper_prec/cpu2017/config/souper-cache.cfg`
-at [line 191](https://gist.github.com/zhengyangl/9d6c79beded94584f35292ee00c964e9#file-souper-cache-cfg-L191).
-
 # Setup Redis
 
-First, let us make sure there are no keys
-in any existing redis. You can check the keyspace by:
+First, let us make sure the redis-server is serving the Souper expressions of SPEC CPU benchmarks. You can check the keyspace by:
 ```
 $ redis-cli dbsize
 ```
-This should return `0`.
-
-If not, you can flush the keys, and shutdown the existing redis. Also, in this case locate a file named `dump.rdb` and delete it.
-```
-$ redis-cli flushall
-$ redis-cli shutdown
-$ rm /path/to/dump.rdb
-```
-If you shutdown the redis-server, invoke it again for this experiment.
+This should return `269,113`.
 
 # Set Souper environment variables
 
 ```
-$ export SOUPER_STATIC_PROFILE=1
 $ export SOUPER_IGNORE_SOLVER_ERRORS=1
-$ export SOUPER_NO_INFER=1
-$ export SOUPER_SOLVER="-z3-path=/path/to/z3"
+$ export SOUPER_SOLVER="-z3-path=/"
+$ export SOUPER_PRECISION="/usr/src/artifact-cgo/precision"
 ```
-
-# Run SPEC benchmark
-
-In another shell, follow these steps:
-```
-$ export CGO_HOME=$(pwd)/artifact-cgo
-$ export souper_prec=$CGO_HOME/scratch/precision
-$ cd $souper_prec/cpu2017
-$ . shrc
-$ runcpu -D --config=souper-cache --action=build --tune=base intspeed fpspeed
-```
-After the SPEC build finishes, you can check the redis dbsize to find
-out that there should be `269,113` keys. Check by running `redis-cli dbsize`
 
 # Evaluation: Table 1 (Precision Testing of each DFA)
 
@@ -88,7 +54,7 @@ scripts in that so that you can always have separate results.
 
 Make sure you set and move to the path:
 ```
-$ export CGO_HOME=$(pwd)/artifact-cgo
+$ export CGO_HOME=/usr/src/artifact-cgo
 $ cd $CGO_HOME
 ```
 - For known bits dataflow fact:
