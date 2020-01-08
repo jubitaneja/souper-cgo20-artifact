@@ -94,7 +94,7 @@ echo "---------- power two analysis done! -------"
 
 #####################
 
-sh section-4.1/extra-scripts/process-range.sh
+sh scripts/process-range.sh
 
-sh section-4.1/extra-scripts/process-demanded-bits.sh
+sh scripts/process-demanded-bits.sh
 
