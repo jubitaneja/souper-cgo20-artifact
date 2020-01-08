@@ -1,40 +1,12 @@
+# Testing Static Analyses for Precision and Soundness
+
 This repository guides you to build and test
-our work that we submitted to **CGO 2020**.
+our work that is accepted at the **CGO 2020**.
 
-For your reference, we want to inform you that all our work
-is open source. You can build it easily with some assumptions
-on pre-requisites listed further. The results shown
-in Table 1 and 2 (in paper) are time consuming.
+Our work is open source. You can build it easily with some assumptions
+on pre-requisites listed further.
 
-**Estimated Time**
-
-To give you an idea on evaluation time to test SPEC
-CPU 2017 benchmark for precision testing experiment, it
-takes a minimum of ~8 hours to a maximum of ~40 hours
-for one dataflow fact, on a machine with two 28-core Xeon processors.
-
-The performance evaluation experiment in manual setup
-requires building applications like, Gzip, Bzip2, Stockfish, and SQLite.
-It takes from a couple of hours for Bzip2, ~8 hours for Gzip,
-~25 hours for Stockfish, and ~70 hours for SQLite.
-
-In Docker setup, once Docker image is pulled,
-you can run precision and soundness testing
-scripts in a few minutes. The performance testing
-script takes ~40-50 minutes to finish.
-
-**In case, you have any time constraints, we recommend
-you to pull the docker image especially for performance
-evaluation experiment which takes the longest in manual
-setup.**
-
-The analysis of results are discussed
-[here](#analyzing-the-results).
-We also provide guidelines for
-customizing
-experiments [here](#customization-how-to-use-our-tool-for-extended-testing).
-
-# Build and Run the artifact
+# Section 1: Build and Run the artifact
 
 ## Requirements
 Souper should run on a modern Linux or OSX machine.
