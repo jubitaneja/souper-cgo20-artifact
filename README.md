@@ -1,11 +1,6 @@
 This repository guides you to build and test
 our work that we submitted to **CGO 2020**.
 
-There are two ways to reproduce the results.
-- Following the instructions to use a pre-compiled [docker image](https://github.com/jubitaneja/artifact-cgo#approach-1-using-docker-image).
-- Following the instructions to 
-[build from scratch](https://github.com/jubitaneja/artifact-cgo#approach-2-building-from-scratch).
-
 For your reference, we want to inform you that all our work
 is open source. You can build it easily with some assumptions
 on pre-requisites listed further. The results shown
