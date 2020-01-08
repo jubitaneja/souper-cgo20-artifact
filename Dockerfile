@@ -6,8 +6,14 @@ run set -x; \
         && apt-get autoremove -qq \
         && apt-get remove -y -qq clang llvm llvm-runtime \
 	&& apt-get install libgmp10 \
-	&& echo 'ca-certificates vim libc6-dev libgmp-dev cmake time patch ninja-build make autoconf automake libtool golang-go python subversion re2c git gcc g++ libredis-perl redis-server' > /usr/src/build-deps \
+	&& echo 'ca-certificates vim libc6-dev libgmp-dev cmake time patch ninja-build make autoconf automake libtool golang-go python subversion re2c git gcc g++ libredis-perl' > /usr/src/build-deps \
 	&& apt-get install -y $(cat /usr/src/build-deps) --no-install-recommends
+
+run export CC=gcc CXX=g++ \
+        && cd /usr/src/redis \
+	&& git checkout 5.0.3 \
+	&& make -j10 \
+	&& make install
 
 run export GOPATH=/usr/src/go \
 	&& go get github.com/gomodule/redigo/redis
@@ -31,10 +37,6 @@ add precision/souper/utils /usr/src/artifact-cgo/precision/souper/utils
 add precision/souper/runtime /usr/src/artifact-cgo/precision/souper/runtime
 add precision/souper/unittests /usr/src/artifact-cgo/precision/souper/unittests
 add precision/spec/dump.rdb.gz /usr/src/artifact-cgo/precision/dump.rdb.gz
-
-run service redis-server stop \
-    && gzip -d -c /usr/src/artifact-cgo/precision/dump.rdb > /var/lib/redis/dump.rdb \
-    && chown redis: /var/lib/redis/dump.rdb
 
 run export GOPATH=/usr/src/go \
 	&& mkdir -p /usr/src/artifact-cgo/precision/souper-build \
