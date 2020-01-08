@@ -73,49 +73,49 @@ You will see filenames starting with `knownbits_*`
 This may take up to 22 hours to finish on a machine
 with 16-cores.
 
-- For negative dataflow fact:
+- **For negative dataflow fact:**
 ```
 (docker) $ mkdir $CGO_HOME/neg && cd $CGO_HOME/neg
 (docker) $ $CGO_HOME/precision/souper-build/cache_dfa --neg
 ```
 Estimated time: 5 hours
 
-- For non-negative dataflow fact:
+- **For non-negative dataflow fact:**
 ```
 (docker) $ mkdir $CGO_HOME/non-neg && cd $CGO_HOME/non-neg
 (docker) $ $CGO_HOME/precision/souper-build/cache_dfa --nonneg
 ```
 Estimated time: 9 hours
 
-- For non-zero dataflow fact:
+- **For non-zero dataflow fact:**
 ```
 (docker) $ mkdir $CGO_HOME/non-zero && cd $CGO_HOME/non-zero
 (docker) $ $CGO_HOME/precision/souper-build/cache_dfa --nonzero
 ```
 Estimated time: 18 hours
 
-- For power of two dataflow fact:
+- **For power of two dataflow fact:**
 ```
 (docker) $ mkdir $CGO_HOME/power && cd $CGO_HOME/power
 (docker) $ $CGO_HOME/precision/souper-build/cache_dfa --power
 ```
 Estimated time: 5 hours
 
-- For number of sign bits dataflow fact:
+- **For number of sign bits dataflow fact:**
 ```
 (docker) $ mkdir $CGO_HOME/signbits && cd $CGO_HOME/signbits
 (docker) $ $CGO_HOME/precision/souper-build/cache_dfa --signBits
 ```
 Estimated time: 21 hours
 
-- For range dataflow fact:
+- **For integer range dataflow fact:**
 ```
 (docker) $ mkdir $CGO_HOME/range && cd $CGO_HOME/range
 (docker) $ $CGO_HOME/precision/souper-build/cache_range
 ```
 Estimated time: 25 hours
 
-- For demanded bits dataflow fact:
+- **For demanded bits dataflow fact:**
 ```
 (docker) $ mkdir $CGO_HOME/db && cd $CGO_HOME/db
 (docker) $ $CGO_HOME/precision/souper-build/cache_demandedbits
@@ -123,5 +123,5 @@ Estimated time: 25 hours
 Estimated time: 25 hours
 
 To understand the results, you can check
-[this](README.md#section-41).
+[this](README.md#analysis-section-41).
 
