@@ -6,7 +6,7 @@ run set -x; \
         && apt-get autoremove -qq \
         && apt-get remove -y -qq clang llvm llvm-runtime \
 	&& apt-get install libgmp10 \
-	&& echo 'ca-certificates vim libc6-dev libgmp-dev cmake time patch ninja-build make autoconf automake libtool golang-go python subversion re2c git gcc g++ libredis-perl' > /usr/src/build-deps \
+	&& echo 'ca-certificates vim libc6-dev libgmp-dev cmake time patch ninja-build make autoconf automake libtool golang-go python subversion re2c git gcc g++ libredis-perl p7zip' > /usr/src/build-deps \
 	&& apt-get install -y $(cat /usr/src/build-deps) --no-install-recommends
 
 run export CC=gcc CXX=g++ \
@@ -36,7 +36,9 @@ add precision/souper/tools /usr/src/artifact-cgo/precision/souper/tools
 add precision/souper/utils /usr/src/artifact-cgo/precision/souper/utils
 add precision/souper/runtime /usr/src/artifact-cgo/precision/souper/runtime
 add precision/souper/unittests /usr/src/artifact-cgo/precision/souper/unittests
-add precision/spec/dump.rdb.gz /usr/src/artifact-cgo/precision/dump.rdb.gz
+add precision/spec/dump.rdb.7z /usr/src/artifact-cgo/precision/dump.rdb.7z
+
+run 7z e /usr/src/artifact-cgo/precision/dump.rdb.7z
 
 run export GOPATH=/usr/src/go \
 	&& mkdir -p /usr/src/artifact-cgo/precision/souper-build \
