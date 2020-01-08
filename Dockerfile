@@ -20,6 +20,7 @@ run export GOPATH=/usr/src/go \
 	&& go get github.com/gomodule/redigo/redis
 
 add precision/souper/build_deps.sh /usr/src/artifact-cgo/precision/souper/build_deps.sh
+add precision/souper/patches /usr/src/artifact-cgo/precision/souper/patches
 run export CC=cc CXX=c++ \
 	&& cd /usr/src/artifact-cgo/precision/souper \
 	&& ./build_deps.sh Release \
@@ -27,7 +28,6 @@ run export CC=cc CXX=c++ \
 	&& rm -rf third_party/hiredis/install/lib/libhiredis.so*
 
 add precision/souper/clone_and_test.sh /usr/src/artifact-cgo/precision/souper/clone_and_test.sh
-add precision/souper/patches /usr/src/artifact-cgo/precision/souper/patches
 add precision/souper/CMakeLists.txt /usr/src/artifact-cgo/precision/souper/CMakeLists.txt
 add precision/souper/docs /usr/src/artifact-cgo/precision/souper/docs
 add precision/souper/include /usr/src/artifact-cgo/precision/souper/include
