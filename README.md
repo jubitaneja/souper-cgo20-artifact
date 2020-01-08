@@ -745,8 +745,8 @@ and from LLVM compiler are as shown in the Table below.
   **Sample command line**
 
   ```
-  export SOUPER_SOLVER="-z3-path=/usr/src/artifact-cgo/precision/souper/third_party/z3-install/bin/z3"
-  souper-check -infer-known-bits $SOUPER_SOLVER inputFile.opt
+  (docker) $ export SOUPER_SOLVER="-z3-path=/usr/src/artifact-cgo/precision/souper/third_party/z3-install/bin/z3"
+  (docker) $ souper-check -infer-known-bits $SOUPER_SOLVER inputFile.opt
   ```
 
   In the above command, path to **`souper-check`** utility is from
@@ -763,7 +763,7 @@ and from LLVM compiler are as shown in the Table below.
   **Sample command line**
 
   ```
-  souper2llvm-precision-test inputFile.opt | llvm-as | souper -print-known-at-return
+  (docker) $ souper2llvm-precision-test inputFile.opt | llvm-as | souper -print-known-at-return
   ```
 
   In the above command, path to **`souper2llvm-precision-test`** and **`souper`**
