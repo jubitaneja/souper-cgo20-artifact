@@ -14,7 +14,8 @@ First, let us make sure the redis-server is serving the Souper expressions of SP
 (docker) $ cd /usr/src/artifact-cgo/precision/spec/ && redis-server &
 (docker) $ redis-cli dbsize
 ```
-This should return `269,113`.
+This should return `269,113`. The artifact provides redis cache file `dump.rdb.7z`
+that contains all input Souper expressions.
 
 # Set Souper environment variables
 
@@ -69,7 +70,7 @@ Make sure you set and move to the path:
 (docker) $ $CGO_HOME/precision/souper-build/cache_dfa --knownbits
 ```
 You will see filenames starting with `knownbits_*`
-This may take upto 22 hours to finish on a machine
+This may take up to 22 hours to finish on a machine
 with 16-cores.
 
 - For negative dataflow fact:
