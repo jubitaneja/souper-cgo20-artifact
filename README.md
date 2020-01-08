@@ -61,10 +61,15 @@ by the SPEC License Agreement. For details, check
 Instead, we provide all the Souper expression extracted from SPEC CPU benchmarks in our docker file.
 
 ## Steps to follow
-1. Fetch the docker image from docker hub. Alternatively, you can build the docker image by following the instructions from [here](BUILD.md).
+1. Fetch the docker image from docker hub.
 ```
 $ sudo docker pull jubitaneja/artifact-cgo:latest
 ```
+Alternatively, you can build the docker image from scratch by the following instruction.
+```
+$ ./build_docker.sh
+```
+
 To check the list of images, run:
 ```
 $ sudo docker images
