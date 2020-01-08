@@ -91,8 +91,8 @@ This directory contains the entire setup of our tool.
 ### Evaluation: Section 4.1
 This section makes use of SPEC CPU 2017 benchmark
 that we cannot share directly in the docker image.
-For this, you will need your own ISO image and follow
-the instructions [here](#evaluation-section-41-1)
+For this, you will need to install your own SPEC CPU inside docker and follow
+the instructions [here](#SPEC.md)
 to reproduce the results.
 
 ### Evaluation: Section 4.2 to 4.5
