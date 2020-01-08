@@ -9,7 +9,8 @@ us against what an LLVM compiler computes.
 
 First, let us make sure the redis-server is serving the Souper expressions of SPEC CPU benchmarks. You can check the keyspace by:
 ```
-(docker) $ service redis-server start
+(docker) $ killall redis-server
+(docker) $ cd /usr/src/artifact-cgo/precision/spec && redis-server &
 (docker) $ redis-cli dbsize
 ```
 This should return `269,113`.
@@ -19,7 +20,6 @@ This should return `269,113`.
 ```
 (docker) $ export SOUPER_IGNORE_SOLVER_ERRORS=1
 (docker) $ export SOUPER_SOLVER="-z3-path=/"
-(docker) $ export SOUPER_PRECISION="/usr/src/artifact-cgo/precision"
 ```
 
 # Evaluation: Table 1 (Precision Testing of each DFA)
