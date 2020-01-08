@@ -781,6 +781,6 @@ and from LLVM compiler are as shown in the Table below.
   to translate a given Souper IR to LLVM IR.
 
   You can also follow instructions
-  of [Section 4.6](https://github.com/jubitaneja/artifact-cgo/tree/master/section-4.6)
+  of [Section 4.6](performance.md)
   to evaluate the performance of any other benchmarks as well.
 
