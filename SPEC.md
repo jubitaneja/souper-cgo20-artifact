@@ -9,6 +9,7 @@ us against what an LLVM compiler computes.
 
 First, let us make sure the redis-server is serving the Souper expressions of SPEC CPU benchmarks. You can check the keyspace by:
 ```
+(docker) $ service redis start
 (docker) $ redis-cli dbsize
 ```
 This should return `269,113`.
