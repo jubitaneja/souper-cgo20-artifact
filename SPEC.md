@@ -5,12 +5,6 @@ harvested by Souper, we compare the dataflow
 facts computed by precise algorithms written by
 us against what an LLVM compiler computes.
 
-Note: We assume that you have already built Souper for
-precision testing by running `build_souper_precision.sh`
-script [here](https://github.com/jubitaneja/artifact-cgo#building-souper).
-So, no need to do that again! If not, please go back and
-follow the instructions.
-
 As you go ahead and follow the instructions
 to build SPEC benchmark, at one point you
 will be asked to specify the path of `sclang`
@@ -25,25 +19,7 @@ to mention it ahead-of-time as well.
 # Build and Install SPEC CPU 2017
 
 As mentioned earlier that we cannot share the SPEC ISO
-image directly. We are assuming that you have the SPEC
-ISO version 1.0.1 image. Follow the steps:
-
-+ `CGO_HOME` refers to `artifact-cgo` directory.
-```
-$ export CGO_HOME=$(pwd)
-```
-
-+ Copy SPEC ISO (`cpu2017-1_0_1.iso`) to `$CGO_HOME/scratch/precision`
-```
-$ export souper_prec=$CGO_HOME/scratch/precision
-$ cp cpu2-17-1_0_1.iso $souper_prec
-
-$ mkdir $souper_prec/spec
-$ mount -t iso9660 -o ro,exec,loop $souper_prec/cpu2017-1_0_1.iso $souper_prec/spec
-$ $souper_prec/spec/install.sh
-```
-
-+ Follow the installation wizard and install at `$souper_prec/cpu2017`
+image directly. We are assuming that you have the SPEC CPU 2017 benchmarks installed in the directory /usr/src/cpu2017.
 
 - Copy `souper-cache.cfg` from https://gist.github.com/zhengyangl/9d6c79beded94584f35292ee00c964e9
 ..to `$souper_prec/cpu2017/config`
@@ -54,20 +30,7 @@ at [line 191](https://gist.github.com/zhengyangl/9d6c79beded94584f35292ee00c964e
 
 # Setup Redis
 
-- Invoke `redis-server` in a different shell.
-
-You can find an installed binary of `redis-server`
-at the path `artifact-cgo/scratch/tools/redis/src`
-You installed redis while running the script
-[prepare_req.sh](https://github.com/jubitaneja/artifact-cgo/blob/master/prepare_req.sh) 
-in the beginning. Otherwise,
-if you installed it at some other path, you can
-invoke the binary from that path.
-
-```
-$ redis-server
-```
-Make sure there are no keys
+First, let us make sure there are no keys
 in any existing redis. You can check the keyspace by:
 ```
 $ redis-cli dbsize
@@ -95,7 +58,7 @@ $ export SOUPER_SOLVER="-z3-path=/path/to/z3"
 
 In another shell, follow these steps:
 ```
-$ export sCGO_HOME=$(pwd)/artifact-cgo
+$ export CGO_HOME=$(pwd)/artifact-cgo
 $ export souper_prec=$CGO_HOME/scratch/precision
 $ cd $souper_prec/cpu2017
 $ . shrc
