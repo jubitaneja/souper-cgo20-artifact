@@ -5,7 +5,7 @@ harvested by Souper, we compare the dataflow
 facts computed by precise algorithms written by
 us against what an LLVM compiler computes.
 
-# Build and Install SPEC CPU 2017
+# Configure SPEC CPU 2017
 
 As mentioned earlier that we cannot share the SPEC ISO image directly. We are assuming that you have the SPEC CPU 2017 benchmarks installed in the directory `/usr/src/cpu2017` inside Docker.
 
