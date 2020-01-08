@@ -39,9 +39,9 @@ add precision/souper/runtime /usr/src/artifact-cgo/precision/souper/runtime
 add precision/souper/unittests /usr/src/artifact-cgo/precision/souper/unittests
 add precision/spec/dump.rdb.gz /usr/src/artifact-cgo/precision/dump.rdb.gz
 
-run service redis-server stop
-    && gzip -d -c /usr/src/artifact-cgo/precision/dump.rdb > /var/lib/redis/dump.rdb
-    && chown redis: /var/lib/redis/dump.rdb
+run service redis-server stop \
+    && gzip -d -c /usr/src/artifact-cgo/precision/dump.rdb > /var/lib/redis/dump.rdb \
+    && chown redis: /var/lib/redis/dump.rdb \
     && service redis-server start
 
 run export GOPATH=/usr/src/go \
