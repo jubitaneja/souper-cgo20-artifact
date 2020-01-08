@@ -37,7 +37,7 @@ add precision/souper/tools /usr/src/artifact-cgo/precision/souper/tools
 add precision/souper/utils /usr/src/artifact-cgo/precision/souper/utils
 add precision/souper/runtime /usr/src/artifact-cgo/precision/souper/runtime
 add precision/souper/unittests /usr/src/artifact-cgo/precision/souper/unittests
-add precision/conf/souper-cache.cfg /usr/src/artifact-cgo/conf/souper-cache.cfg
+add precision/conf/souper-cache.cfg /usr/src/artifact-cgo/precision/conf/souper-cache.cfg
 
 run export GOPATH=/usr/src/go \
 	&& mkdir -p /usr/src/artifact-cgo/precision/souper-build \
