@@ -6,7 +6,7 @@ run set -x; \
         && apt-get autoremove -qq \
         && apt-get remove -y -qq clang llvm llvm-runtime \
 	&& apt-get install libgmp10 \
-	&& echo 'ca-certificates vim libc6-dev libgmp-dev cmake time patch ninja-build make autoconf automake libtool golang-go python subversion re2c git gcc g++ libredis-perl' > /usr/src/build-deps \
+	&& echo 'ca-certificates vim libc6-dev libgmp-dev cmake time patch ninja-build make autoconf automake libtool golang-go python subversion re2c git gcc g++ libredis-perl redis-server' > /usr/src/build-deps \
 	&& apt-get install -y $(cat /usr/src/build-deps) --no-install-recommends \
 	&& git clone https://github.com/antirez/redis /usr/src/redis
 
