@@ -58,8 +58,7 @@ Our evaluation involves [SPEC CPU 2017](https://www.spec.org/cpu2017/)
 benchmark. We cannot provide a copy of this benchmark as restricted
 by the SPEC License Agreement. For details, check
 [this](https://www.spec.org/cpu2017/docs/licenses.html).
-
-For Table 1 in paper, we assume you have a SPEC ISO image, version 1.0.1.
+Instead, we provide all the Souper expression extracted from SPEC CPU benchmarks in our docker file.
 
 ## Steps to follow
 1. Fetch the docker image from docker hub. Alternatively, you can build the docker image by following the instructions from [here](BUILD.md).
@@ -89,11 +88,7 @@ $ cd /usr/src/artifact-cgo
 This directory contains the entire setup of our tool.
 
 ### Evaluation: Section 4.1
-This section makes use of SPEC CPU 2017 benchmark
-that we cannot share directly in the docker image.
-For this, you will need to install your own SPEC CPU inside docker and follow
-the instructions [here](SPEC.md)
-to reproduce the results.
+Refer [here](SPEC.md) for the instructions to reproduce the results.
 
 ### Evaluation: Section 4.2 to 4.5
 These sections evaluates the precision of several
