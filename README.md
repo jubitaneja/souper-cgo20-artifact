@@ -30,7 +30,7 @@ Our evaluation involves [SPEC CPU 2017](https://www.spec.org/cpu2017/)
 benchmark. We cannot provide a copy of this benchmark as restricted
 by the SPEC License Agreement. For details, check
 [this](https://www.spec.org/cpu2017/docs/licenses.html).
-Instead, we provide the Redis databse of
+Instead, we provide the Redis database of
 all input Souper expression collected from compiling the SPEC CPU benchmarks
 with Souper in the artifact.
 
@@ -68,10 +68,10 @@ go the path:
 ```
 This directory contains the entire setup of our tool.
 
-### Evaluation: Section 4.1
+## Evaluation: Section 4.1
 Refer [here](SPEC.md) for detailed instructions to reproduce the results.
 
-### Evaluation: Section 4.2 to 4.5
+## Evaluation: Section 4.2 to 4.5
 These sections evaluates the precision of several
 dataflow analyses as shown in examples in the paper.
 Run the script to reproduce the results.
@@ -80,7 +80,7 @@ Run the script to reproduce the results.
 (docker) $ ./test_precision.sh
 ```
 
-### Evaluation: Section 4.6
+## Evaluation: Section 4.6
 This section measures the impact of precision
 of dataflow analysis. We test compression
 applications, like Bzip2, gzip; SQLite;
@@ -105,7 +105,7 @@ This will take about 40-50 minutes to finish. If you
 want to understand what's happening, please refer the
 details mentioned [further](#section-46).
 
-### Evaluation: Section 4.7
+## Evaluation: Section 4.7
 This section evaluates three soundness bugs
 as discussed in the paper. Run the script:
 ```
@@ -113,7 +113,7 @@ as discussed in the paper. Run the script:
 (docker) $ ./test_sound.sh
 ```
 
-### Evaluation: Section 4.8
+## Evaluation: Section 4.8
 This section mentioned that our work contributed
 towards making concrete improvements to LLVM.
 We provide references to each one of those
@@ -679,11 +679,11 @@ and `Function: foo` is a candidate harvested by Souper.
 This is not giving us any relevant information, so
 you can ignore these parts.
 
-# Customization: How to use our tool for extended testing?
+# Experiment Customization
 
-You can easily customize test inputs written in Souper IR,
+You can easily customize test inputs written in the Souper IR,
 and try different dataflow facts options to compute the
-precise dataflow facts using our tool.
+precise dataflow facts using our algorithms implemented in Souper.
 
 ### Test Inputs
 If you are interested in taking a look at more test
@@ -751,7 +751,7 @@ and from LLVM compiler are as shown in the Table below.
   For demanded bits computation only from LLVM compiler, use `souper2llvm-db`
   to translate a given Souper IR to LLVM IR.
 
-- To build your own programs using a clang compiler with our maximally precicise data flow algorithms,
+- To build your own programs using a clang compiler with our maximally precise data flow algorithms,
   you can point the CC and CXX environment variable to `/usr/src/artifact-cgo/performance/llvm-build/bin/clang` and
   `/usr/src/artifact-cgo/performance/llvm-build/bin/clang++`.
 
