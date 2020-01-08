@@ -181,8 +181,7 @@ will find a very large number of files generated
 as a result.
 
 Now, to reproduce the numbers as shown in Table 1
-in the paper, you just have to run this 
-[script](https://github.com/jubitaneja/artifact-cgo/blob/master/section-4.1/extra-scripts/process-all.sh).
+in the paper, you just have to run this script.
 
 ```
 # Go to the main directory of this repo.
