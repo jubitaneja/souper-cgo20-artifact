@@ -34,7 +34,7 @@ We also provide guidelines for
 customizing
 experiments [here](#customization-how-to-use-our-tool-for-extended-testing).
 
-# Approach 1: Using Docker Image
+# Build and Run the artifact
 
 ## Requirements
 Souper should run on a modern Linux or OSX machine.
