@@ -780,7 +780,3 @@ and from LLVM compiler are as shown in the Table below.
   For demanded bits computation only from LLVM compiler, use `souper2llvm-db`
   to translate a given Souper IR to LLVM IR.
 
-  You can also follow instructions
-  of [Section 4.6](performance.md)
-  to evaluate the performance of any other benchmarks as well.
-
